@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DeliGo — rides, food delivery, groceries & express courier. Ride, eat, live better with one super app." />
+  <meta name="keywords" content="DeliGo, ride, taxi, food delivery, grocery, courier, Portugal" />
+  <meta name="author" content="DeliGo" />
+
+  <!-- Social -->
+  <meta property="og:title" content="DeliGo — Ride, Eat, Live Better" />
+  <meta property="og:description" content="Book safe rides, order food & groceries, or send parcels — all in one app." />
+  <meta property="og:image" content="images/og-cover.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.deligoeu.com/" />
+
+  <!-- Page Title -->
+  <title>DeliGo — Ride, Eat, Live Better</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/slicknav.min.css" rel="stylesheet" />
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/magnific-popup.css" rel="stylesheet" />
+  <link href="css/mousecursor.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('deligo-theme');
+      if (saved === 'dark') document.documentElement.setAttribute('data-theme','dark');
+    } catch(e) {}
+  })();
+</script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"DeliGo",
+    "url":"https://www.deligoeu.com/",
+    "logo":"https://www.deligoeu.com/images/logo.png",
+    "sameAs":[
+      "https://www.facebook.com/deligoeu",
+      "https://www.instagram.com/deligo.pt",
+      "https://www.youtube.com/@DeliGoPT",
+      "https://www.linkedin.com/in/deligopt",
+      "https://www.tiktok.com/@deligo.pt"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+
+
+<!-- ===== Header (Bootstrap Toggler) ===== -->
+<header class="main-header" role="banner">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
+      <div class="container align-items-center">
+        <!-- Logo -->
+ <a class="navbar-brand" href="index.html" aria-label="DeliGo Home">
+  <img src="images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
+</a>
+
+        <!-- Mobile theme toggle (visible < lg) -->
+        <button id="themeToggleMobile" class="btn-icon d-inline-flex d-lg-none ms-auto me-2" type="button" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <!-- Hamburger (only one!) -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse main-menu order-lg-1" id="mainNavbar">
+          <div class="nav-menu-wrapper w-100">
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="about.html">About</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About DeliGo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog / News</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="products.html">Products</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Rides</a></li>
+                  <li class="nav-item"><a class="nav-link" href="drive.html">Drive</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="market.html">Market</a></li>
+                  <li class="nav-item"><a class="nav-link" href="accessories.html">Electronic Accessories</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="plus.html">Plus (Membership)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="support.html">Support</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="stcustomers.html">Customers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="striders.html">Riders</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stdrivers.html">Drivers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfood.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stcouriers.html">Couriers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfleets.html">Fleet Owners</a></li>
+                  <li class="nav-item"><a class="nav-link" href="strestaurants.html">Restaurants & Stores</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stbusiness.html">Business</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="join.html">Join</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="jnrider.html">Become a Rider</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jndriver.html">Become a Driver</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jncourier.html">Become a Courier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnfleet.html">Join as a Fleet Owner</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://vendorfooddeligo.vercel.app/">Add a Restaurant</a></li>
+                  <li class="nav-item"><a class="nav-link" href="franchise.html">Become a franchise</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                </ul>
+              </li>
+
+               <!-- Language -->
+               <li class="nav-item submenu language-switcher">
+  <a class="nav-link" href="#" id="current-language" aria-haspopup="true" aria-expanded="false">
+    <img id="lang-flag" src="images/pt.png" alt="Portuguese" width="24" height="16" style="margin-right:6px" />PT
+  </a>
+  <ul>
+    <li class="nav-item">
+      <a class="nav-link lang-option" data-lang="pt" href="#">
+        <img src="images/pt.png" alt="Português" width="24" height="16" style="margin-right:6px" />Português
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link lang-option" data-lang="en" href="#">
+        <img src="images/en.png" alt="English" width="24" height="16" style="margin-right:6px" />English
+      </a>
+    </li>
+            </ul>
+          </div>
+        </div><!-- /.collapse -->
+
+        <!-- Desktop theme toggle (nice pink button) -->
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-auto order-lg-2">
+          <button id="themeToggleDesktop" class="btn-default btn-sm" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+            <i class="fa-regular fa-moon"></i>
+            <span class="ms-1 d-none d-md-inline">Dark</span>
+          </button>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+  </div>
+</header>
+<!-- ===== /Header ===== -->
+
+
+    <!---->
+<!-- ===== Hero ===== -->
+<div class="hero">
+  <div class="hero-section bg-section parallaxie" style="background-image:url('images/hero-bg.jpg'); background-size:cover; background-position:center;">
+    <div class="container text-center">
+      <div class="section-title">
+        <h1 class="text-anime-style-3 mb-3" data-cursor="-opaque">
+          Empower Your Business with <span class="text-highlight">DeliGo</span>
+        </h1>
+        <p class="wow fadeInUp" data-wow-delay="0.25s">
+          One platform for corporate rides, delivery logistics, and business growth — built for companies of every size.
+        </p>
+      </div>
+      <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
+        <a href="#solutions" class="btn-default btn-highlighted">Explore Solutions</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== Intro ===== -->
+<section class="py-80">
+  <div class="container text-center">
+    <h2 class="mb-3">Simplify Mobility and Logistics for Your Business</h2>
+    <p class="text-muted mx-auto" style="max-width:700px">
+      DeliGo Business helps companies manage transportation, food delivery, and parcel logistics with one powerful platform.
+      From daily staff commutes to last-mile delivery and catering — DeliGo makes operations smarter, faster, and more efficient.
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== Business Solutions ===== -->
+<section id="solutions" class="py-80 bg-section">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="rounded-4 overflow-hidden shadow-sm wow fadeInUp">
+          <img src="images/solutions.jpg" class="w-100" alt="Corporate ride and delivery solutions">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-3">Solutions for Every Business</h2>
+        <ul class="list-unstyled d-grid gap-3">
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-solid fa-car"></i></span>
+            <div><strong>Corporate Ride Service</strong><br><span class="text-muted">Book rides for employees, guests, or clients and manage all trips with transparent billing.</span></div>
+          </li>
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-solid fa-truck-fast"></i></span>
+            <div><strong>Delivery & Logistics</strong><br><span class="text-muted">Automate food and package delivery through our network of riders and couriers.</span></div>
+          </li>
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-solid fa-building"></i></span>
+            <div><strong>Partner Stores & Restaurants</strong><br><span class="text-muted">Expand your reach by selling via DeliGo Food and DeliGo Market platforms.</span></div>
+          </li>
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-solid fa-chart-line"></i></span>
+            <div><strong>Analytics & Insights</strong><br><span class="text-muted">Get reports, delivery performance data, and spending insights in one dashboard.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Benefits ===== -->
+<section class="py-80">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="mb-3">Why Choose DeliGo for Business?</h2>
+        <p class="mb-4">Seamless integration, flexible billing, and powerful tools designed for growth.</p>
+        <ul class="list-unstyled d-grid gap-3">
+          <li><i class="fa-solid fa-check text-highlight me-2"></i> Manage all business rides and deliveries in one app</li>
+          <li><i class="fa-solid fa-check text-highlight me-2"></i> Dedicated account manager and priority support</li>
+          <li><i class="fa-solid fa-check text-highlight me-2"></i> Flexible payment methods and monthly invoicing</li>
+          <li><i class="fa-solid fa-check text-highlight me-2"></i> Scalable solutions for startups to enterprises</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="rounded-4 overflow-hidden shadow-sm wow fadeInUp">
+          <img src="images/careers/life-2.jpg" class="w-100" alt="DeliGo Business Benefits">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CTA ===== -->
+<section class="py-80 bg-section text-center">
+  <div class="container">
+    <h2 class="mb-3">Let’s Build Your Business with DeliGo</h2>
+    <p class="mb-4">Start saving time and money with Portugal’s most connected mobility and delivery platform.</p>
+    <a href="contact.html" class="btn-default btn-highlighted">Contact Sales Team</a>
+    <a href="https://vendorfooddeligo.vercel.app/" class="btn-default ms-2">Become a Partner</a>
+  </div>
+</section>
+
+
+<!-- ===== FAQ ===== -->
+<section class="py-80">
+  <div class="container">
+    <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+    <div class="accordion" id="businessFaq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bc1">What is DeliGo Business?</button>
+        </h2>
+        <div id="bc1" class="accordion-collapse collapse show" data-bs-parent="#businessFaq">
+          <div class="accordion-body">DeliGo Business is a B2B solution providing rides, food delivery, grocery logistics, and courier management services for organizations of all sizes.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bc2">Who can use DeliGo Business?</button>
+        </h2>
+        <div id="bc2" class="accordion-collapse collapse" data-bs-parent="#businessFaq">
+          <div class="accordion-body">Any business — from startups and SMEs to large enterprises, restaurants, and e-commerce companies — can use DeliGo Business to manage deliveries and transport.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bc3">Can I get a custom plan?</button>
+        </h2>
+        <div id="bc3" class="accordion-collapse collapse" data-bs-parent="#businessFaq">
+          <div class="accordion-body">Yes, DeliGo offers custom pricing and enterprise plans based on your business size, delivery volume, and service requirements.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+	
+<!-- Footer -->
+  <footer class="main-footer bg-section" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about-footer">
+            <div class="footer-logo"><img src="images/footer-logo.svg" alt="DeliGo" loading="lazy" /></div>
+            <div class="about-footer-content">
+              <p class="footer-text">
+                From delicious meals to smooth rides, DeliGo makes everyday living easier, faster, and more convenient.
+                Explore accessories like laptops and phones, and discover exciting career opportunities with us.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-quick-links">
+            <h3>Legal policy</h3>
+            <ul>
+              <li><a href="term.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="notice.html">Legal Notice</a></li>
+              <li><a href="accessibility.html">Accessibility</a></li>
+              <li><a href="https://www.livroreclamacoes.pt/Inicio/">Complaints Book</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-menu">
+            <h3>Quick links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="cab.html">Cab</a></li>
+              <li><a href="rider.html">Rider</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-newsletter">
+            <h3>Subscribe to the Newsletter</h3>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST" aria-label="Newsletter sign up">
+                <div class="form-group">
+                  <label for="mail" class="visually-hidden">Email</label>
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Email ..." required />
+                  <button type="submit" class="section-icon-btn" aria-label="Submit">
+                    <img src="images/arrow-white.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-copyright-text">
+			<p>© <span id="year"></span> PIXELMIRACLE, LDA. All rights reserved.<br>DeliGo is a technology platform operated by PIXELMIRACLE, LDA.</p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-5">
+            <div class="footer-social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/@DeliGoPT" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/deligo.pt" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/deligo.pt" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/deligopt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.tiktok.com/@deligo.pt" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- ✅ Mobile submenu toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mql = window.matchMedia('(max-width: 991.98px)');
+    function bindSubmenuToggles(){
+      document.querySelectorAll('.main-header .submenu > a').forEach(function(a){
+        a.addEventListener('click', function(e){
+          if(mql.matches){
+            e.preventDefault();
+            const li = this.parentElement;
+            li.classList.toggle('open');
+          }
+        });
+      });
+    }
+    bindSubmenuToggles();
+  });
+</script>
+
+</body>
+</html>
+
+  
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/validator.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/parallaxie.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/magiccursor.js"></script>
+  <script src="js/SplitText.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/function.js"></script>
+  <script src='js/language.js'></script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+(function(){
+  const html = document.documentElement;
+
+  function isDark(){ return html.getAttribute('data-theme') === 'dark'; }
+
+  function setTheme(next){
+    if(next === 'dark'){ html.setAttribute('data-theme','dark'); }
+    else { html.removeAttribute('data-theme'); }
+    try{ localStorage.setItem('deligo-theme', next); }catch(e){}
+
+    // sync button UIs
+    const desktop = document.getElementById('themeToggleDesktop');
+    const mobile  = document.getElementById('themeToggleMobile');
+    const desktopHtml = next === 'dark'
+      ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>'
+      : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>';
+    const mobileHtml  = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>';
+    if (desktop) desktop.innerHTML = desktopHtml;
+    if (mobile)  mobile.innerHTML  = mobileHtml;
+  }
+
+  function toggle(){ setTheme( isDark() ? 'light' : 'dark' ); }
+
+  // apply saved theme on load
+  let saved = 'light';
+  try{ saved = localStorage.getItem('deligo-theme') || 'light'; }catch(e){}
+  setTheme(saved);
+
+  // bind both buttons
+  ['themeToggleDesktop','themeToggleMobile'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('click', toggle);
+  });
+})();
+</script>
+
+</body>
+</html>

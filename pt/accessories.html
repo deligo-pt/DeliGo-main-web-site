@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DeliGo — rides, food delivery, groceries & express courier. Ride, eat, live better with one super app." />
+  <meta name="keywords" content="DeliGo, ride, taxi, food delivery, grocery, courier, Portugal" />
+  <meta name="author" content="DeliGo" />
+
+  <!-- Social -->
+  <meta property="og:title" content="DeliGo — Ride, Eat, Live Better" />
+  <meta property="og:description" content="Book safe rides, order food & groceries, or send parcels — all in one app." />
+  <meta property="og:image" content="images/og-cover.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.deligo.pt/" />
+
+  <!-- Page Title -->
+  <title>DeliGo — Ride, Eat, Live Better</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/slicknav.min.css" rel="stylesheet" />
+  <link href="/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="/css/all.css" rel="stylesheet" />
+  <link href="/css/animate.css" rel="stylesheet" />
+  <link href="/css/magnific-popup.css" rel="stylesheet" />
+  <link href="/css/mousecursor.css" rel="stylesheet" />
+  <link href="/css/custom.css" rel="stylesheet" />
+
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('deligo-theme');
+      if (saved === 'dark') document.documentElement.setAttribute('data-theme','dark');
+    } catch(e) {}
+  })();
+</script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"DeliGo",
+    "url":"https://www.deligoeu.com/",
+    "logo":"https://www.deligoeu.com/images/logo.png",
+    "sameAs":[
+      "https://www.facebook.com/deligoeu",
+      "https://www.instagram.com/deligo.pt",
+      "https://www.youtube.com/@DeliGoPT",
+      "https://www.linkedin.com/in/deligopt",
+      "https://www.tiktok.com/@deligo.pt"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="/images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+
+
+<!-- ===== Header (Bootstrap Toggler) ===== -->
+<header class="main-header" role="banner">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
+      <div class="container align-items-center">
+        <!-- Logo -->
+ <a class="navbar-brand" href="index.html" aria-label="DeliGo Home">
+  <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
+</a>
+
+        <!-- Mobile theme toggle (visible < lg) -->
+        <button id="themeToggleMobile" class="btn-icon d-inline-flex d-lg-none ms-auto me-2" type="button" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <!-- Hamburger (only one!) -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse main-menu order-lg-1" id="mainNavbar">
+          <div class="nav-menu-wrapper w-100">
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="about.html">About</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About DeliGo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog / News</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="products.html">Products</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Rides</a></li>
+                  <li class="nav-item"><a class="nav-link" href="drive.html">Drive</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="market.html">Market</a></li>
+                  <li class="nav-item"><a class="nav-link" href="accessories.html">Electronic Accessories</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="plus.html">Plus (Membership)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="support.html">Support</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="stcustomers.html">Customers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="striders.html">Riders</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stdrivers.html">Drivers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfood.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stcouriers.html">Couriers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfleets.html">Fleet Owners</a></li>
+                  <li class="nav-item"><a class="nav-link" href="strestaurants.html">Restaurants & Stores</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stbusiness.html">Business</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="join.html">Join</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="jnrider.html">Become a Rider</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jndriver.html">Become a Driver</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jncourier.html">Become a Courier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnfleet.html">Join as a Fleet Owner</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://vendorfooddeligo.vercel.app/">Add a Restaurant</a></li>
+                  <li class="nav-item"><a class="nav-link" href="franchise.html">Become a franchise</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                </ul>
+              </li>
+
+              <!-- Language -->
+               <li class="nav-item submenu language-switcher">
+  <a class="nav-link" href="#" id="current-language" aria-haspopup="true" aria-expanded="false">
+    <img id="lang-flag" src="/images/pt.png" alt="Portuguese" width="24" height="16" style="margin-right:6px" />PT
+  </a>
+  <ul>
+    <li class="nav-item">
+      <a class="nav-link lang-option" data-lang="pt" href="#">
+        <img src="/images/pt.png" alt="Português" width="24" height="16" style="margin-right:6px" />Português
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link lang-option" data-lang="en" href="#">
+        <img src="/images/en.png" alt="English" width="24" height="16" style="margin-right:6px" />English
+      </a>
+    </li>
+  </ul>
+</li>
+            </ul>
+          </div>
+        </div><!-- /.collapse -->
+
+        <!-- Desktop theme toggle (nice pink button) -->
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-auto order-lg-2">
+          <button id="themeToggleDesktop" class="btn-default btn-sm" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+            <i class="fa-regular fa-moon"></i>
+            <span class="ms-1 d-none d-md-inline">Dark</span>
+          </button>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+  </div>
+</header>
+<!-- ===== /Header ===== -->
+
+
+    <!---->
+    <!-- Page Header Start -->
+	<div class="page-header bg-section parallaxie">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- Page Header Box Start -->
+					<div class="page-header-box">
+						<h1 class="text-anime-style-3" data-cursor="-opaque">Accessories</h1>
+					</div>
+					<!-- Page Header Box End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+   
+	<!-- Page Accessories Start -->
+<div class="page-fleets page-accessories">
+  <div class="container">
+    <div class="row">
+
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="fleets-sidebar wow fadeInUp">
+          <!-- Search -->
+          <div class="fleets-search-box">
+            <form id="accessoriesSearchForm" action="#" method="GET">
+              <div class="form-group">
+                <input type="text" name="q" class="form-control" id="search" placeholder="Search accessories…" />
+                <button type="submit" class="section-icon-btn" aria-label="Search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="fleets-sidebar-list-box">
+            <!-- Categories -->
+            <div class="fleets-sidebar-list">
+              <div class="fleets-list-title"><h3>categories</h3></div>
+              <ul>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-bag"><label class="form-check-label" for="cat-bag">Bags & Gear</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-helmet"><label class="form-check-label" for="cat-helmet">Helmets</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-laptop"><label class="form-check-label" for="cat-laptop">Laptops</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-pc"><label class="form-check-label" for="cat-pc">Desktop PC</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-phone"><label class="form-check-label" for="cat-phone">Smartphones</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-mouse"><label class="form-check-label" for="cat-mouse">Mouse & Peripherals</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="cat-power"><label class="form-check-label" for="cat-power">Power Banks</label></li>
+              </ul>
+            </div>
+
+            <!-- Brand -->
+            <div class="fleets-sidebar-list">
+              <div class="fleets-list-title"><h3>brand</h3></div>
+              <ul>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-dg"><label class="form-check-label" for="brand-dg">DeliGo</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-apple"><label class="form-check-label" for="brand-apple">Apple</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-samsung"><label class="form-check-label" for="brand-samsung">Samsung</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-xiaomi"><label class="form-check-label" for="brand-xiaomi">Xiaomi</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-lenovo"><label class="form-check-label" for="brand-lenovo">Lenovo</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-hp"><label class="form-check-label" for="brand-hp">HP</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="brand-asus"><label class="form-check-label" for="brand-asus">ASUS</label></li>
+              </ul>
+            </div>
+
+            <!-- Availability -->
+            <div class="fleets-sidebar-list">
+              <div class="fleets-list-title"><h3>availability</h3></div>
+              <ul>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="in-stock"><label class="form-check-label" for="in-stock">In Stock</label></li>
+                <li class="form-check"><input class="form-check-input" type="checkbox" id="pre-order"><label class="form-check-label" for="pre-order">Pre-order</label></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Sidebar -->
+
+      <!-- Grid -->
+      <div class="col-lg-9">
+        <div class="fleets-collection-box">
+          <div class="row">
+
+            <!-- DeliGo Delivery Bag -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp">
+                <div class="image-box">
+                  <img src="/images/accessories/deligo-bag.png" alt="DeliGo Delivery Bag">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>bags & gear</h3>
+                    <h2>DeliGo Delivery Bag</h2>
+                  </div>
+				  <div class="perfect-fleet-body">
+  <ul class="spec-list">
+    <li class="spec">
+      <span class="icon">📦</span>
+      <span class="txt">
+        <span class="ttl">45L</span>
+        <span class="sub">Insulated, leakproof</span>
+      </span>
+    </li>
+    <li class="spec">
+      <span class="icon">❄️</span>
+      <span class="txt">
+        <span class="ttl">Hot & Cold</span>
+        <span class="sub">Long-retention liner</span>
+      </span>
+    </li>
+    <li class="spec">
+      <span class="icon">🎒</span>
+      <span class="txt">
+        <span class="ttl">Padded Straps</span>
+        <span class="sub">Reflective panels</span>
+      </span>
+    </li>
+    <li class="spec">
+      <span class="icon">🧼</span>
+      <span class="txt">
+        <span class="ttl">Easy-clean</span>
+        <span class="sub">Anti-leak interior</span>
+      </span>
+    </li>
+  </ul>
+</div>
+
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€30<span>/unit | Without IVA</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+
+            <!-- DeliGo Helmet -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp" data-wow-delay="0.15s">
+                <div class="image-box">
+                  <img src="/images/accessories/deligo-helmet.png" alt="DeliGo Helmet">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>helmets</h3>
+                    <h2>DeliGo Rider Helmet</h2>
+                  </div>
+                  
+				  <div class="perfect-fleet-body">
+  <ul class="spec-list">
+    <li class="spec">
+      <span class="icon">🛡️</span>
+      <span class="txt">
+        <span class="ttl">ECE Certified</span>
+        <span class="sub">Road-legal safety</span>
+      </span>
+    </li>
+    <li class="spec">
+      <span class="icon">🌬️</span>
+      <span class="txt">
+        <span class="ttl">Ventilated</span>
+        <span class="sub">Anti-scratch visor</span>
+      </span>
+    </li>
+    <li class="spec">
+      <span class="icon">🪶</span>
+      <span class="txt">
+        <span class="ttl">Lightweight</span>
+        <span class="sub">Comfort fit</span>
+      </span>
+    </li>
+    <li class="spec">
+      <span class="icon">🧽</span>
+      <span class="txt">
+        <span class="ttl">Washable Liner</span>
+        <span class="sub">Quick-dry fabric</span>
+      </span>
+    </li>
+  </ul>
+</div>
+
+				  
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€49<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Laptop -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="image-box">
+                  <img src="/images/accessories/laptop-15.png" alt="15” Laptop">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>laptops</h3>
+                    <h2>15″ Laptop</h2>
+                  </div>
+                  
+				  <div class="perfect-fleet-body">
+  <ul class="spec-list">
+    <li class="spec"><span class="icon">⚙️</span><span class="txt"><span class="ttl">Intel i5 / Ryzen 5</span><span class="sub">Latest gen CPU</span></span></li>
+    <li class="spec"><span class="icon">💾</span><span class="txt"><span class="ttl">16GB + 512GB</span><span class="sub">RAM / NVMe SSD</span></span></li>
+    <li class="spec"><span class="icon">🔋</span><span class="txt"><span class="ttl">All-day Battery</span><span class="sub">Fast charging</span></span></li>
+    <li class="spec"><span class="icon">🖥️</span><span class="txt"><span class="ttl">15″ FHD</span><span class="sub">Slim bezel</span></span></li>
+  </ul>
+</div>
+
+				  
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€299<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop PC -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp">
+                <div class="image-box">
+                  <img src="/images/accessories/desktop-pc1.jpg" alt="Desktop PC">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>desktop pc</h3>
+                    <h2>Workstation PC (i7 | 16GB | 1TB)</h2>
+                  </div>
+                  <div class="perfect-fleet-body">
+                    <ul>
+                      <li><i class="fa-regular fa-microchip"></i> Intel i7 / Ryzen 7</li>
+                      <li><i class="fa-regular fa-hdd"></i> 1TB NVMe SSD</li>
+                      <li><i class="fa-regular fa-display"></i> Dual-monitor ready</li>
+                    </ul>
+                  </div>
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€599<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Smartphone -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp" data-wow-delay="0.15s">
+                <div class="image-box">
+                  <img src="/images/accessories/phone.png" alt="Smartphone">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>smartphones</h3>
+                    <h2>5G Smartphone (128GB)</h2>
+                  </div>
+                  <div class="perfect-fleet-body">
+                    <ul>
+                      <li><i class="fa-regular fa-signal"></i> 5G / Dual SIM</li>
+                      <li><i class="fa-regular fa-camera"></i> 50MP AI camera</li>
+                      <li><i class="fa-regular fa-battery-full"></i> 5000mAh fast charge</li>
+                    </ul>
+                  </div>
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€149<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wireless Mouse -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="image-box">
+                  <img src="/images/accessories/mouse.png" alt="Wireless Mouse">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>peripherals</h3>
+                    <h2>Wireless Mouse (Silent)</h2>
+                  </div>
+                  <div class="perfect-fleet-body">
+                    <ul>
+                      <li><i class="fa-regular fa-bluetooth-b"></i> Bluetooth / 2.4G</li>
+                      <li><i class="fa-regular fa-hand-pointer"></i> Silent click, ergonomic</li>
+                      <li><i class="fa-regular fa-battery-half"></i> 3-month battery life</li>
+                    </ul>
+                  </div>
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€9.50<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Power Bank 20,000 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp">
+                <div class="image-box">
+                  <img src="/images/accessories/powerbank-20000.png" alt="Power Bank 20000mAh">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>power banks</h3>
+                    <h2>Power Bank 20,000mAh (PD)</h2>
+                  </div>
+                  <div class="perfect-fleet-body">
+                    <ul>
+                      <li><i class="fa-regular fa-bolt"></i> 22.5W PD / QC fast charge</li>
+                      <li><i class="fa-regular fa-usb"></i> USB-C + USB-A ports</li>
+                      <li><i class="fa-regular fa-shield-check"></i> Multi-protect safety</li>
+                    </ul>
+                  </div>
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€22<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Small Power Bank -->
+            <div class="col-lg-4 col-md-6">
+              <div class="perfect-fleet-item fleets-collection-item wow fadeInUp" data-wow-delay="0.15s">
+                <div class="image-box">
+                  <img src="/images/accessories/powerbank-mini.png" alt="Mini Power Bank 5000mAh">
+                </div>
+                <div class="perfect-fleet-content">
+                  <div class="perfect-fleet-title">
+                    <h3>power banks</h3>
+                    <h2>Mini Power Bank 5,000mAh</h2>
+                  </div>
+                  <div class="perfect-fleet-body">
+                    <ul>
+                      <li><i class="fa-regular fa-mobile"></i> Pocket-size, Type-C</li>
+                      <li><i class="fa-regular fa-bolt"></i> 15W quick charge</li>
+                      <li><i class="fa-regular fa-weight-hanging"></i> Ultra-light 100g</li>
+                    </ul>
+                  </div>
+                  <div class="perfect-fleet-footer">
+                    <div class="perfect-fleet-pricing"><h2>€10<span>/unit</span></h2></div>
+                    <div class="perfect-fleet-btn"><a href="#" class="section-icon-btn"><img src="/images/arrow-white.svg" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="col-lg-12">
+              <div class="fleets-pagination wow fadeInUp" data-wow-delay="0.3s">
+                <ul class="pagination">
+                  <li><a href="#"><i class="fa-solid fa-arrow-left-long"></i></a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- /Grid -->
+
+    </div>
+  </div>
+</div>
+<!-- Page Accessories End -->
+
+	
+	
+	
+<!-- Footer -->
+  <footer class="main-footer bg-section" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about-footer">
+            <div class="footer-logo"><img src="/images/footer-logo.svg" alt="DeliGo" loading="lazy" /></div>
+            <div class="about-footer-content">
+              <p class="footer-text">
+                From delicious meals to smooth rides, DeliGo makes everyday living easier, faster, and more convenient.
+                Explore accessories like laptops and phones, and discover exciting career opportunities with us.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-quick-links">
+            <h3>Legal policy</h3>
+            <ul>
+              <li><a href="term.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="notice.html">Legal Notice</a></li>
+              <li><a href="accessibility.html">Accessibility</a></li>
+              <li><a href="complaintsbook.html">Complaints Book</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-menu">
+            <h3>Quick links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="cab.html">Cab</a></li>
+              <li><a href="rider.html">Rider</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-newsletter">
+            <h3>Subscribe to the Newsletter</h3>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST" aria-label="Newsletter sign up">
+                <div class="form-group">
+                  <label for="mail" class="visually-hidden">Email</label>
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Email ..." required />
+                  <button type="submit" class="section-icon-btn" aria-label="Submit">
+                    <img src="/images/arrow-white.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-copyright-text">
+			<p>© <span id="year"></span> DeliGo Technologies Inc. All rights reserved.</p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-5">
+            <div class="footer-social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/@DeliGoPT" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/deligoeu" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/deligo.pt" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/deligopt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.tiktok.com/@deligo.pt" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/language.js"></script>
+
+<!-- ✅ Mobile submenu toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mql = window.matchMedia('(max-width: 991.98px)');
+    function bindSubmenuToggles(){
+      document.querySelectorAll('.main-header .submenu > a').forEach(function(a){
+        a.addEventListener('click', function(e){
+          if(mql.matches){
+            e.preventDefault();
+            const li = this.parentElement;
+            li.classList.toggle('open');
+          }
+        });
+      });
+    }
+    bindSubmenuToggles();
+  });
+</script>
+
+</body>
+</html>
+
+  
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/validator.min.js"></script>
+  <script src="/js/jquery.slicknav.js"></script>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.counterup.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/SmoothScroll.js"></script>
+  <script src="/js/parallaxie.js"></script>
+  <script src="/js/gsap.min.js"></script>
+  <script src="/js/magiccursor.js"></script>
+  <script src="/js/SplitText.js"></script>
+  <script src="/js/ScrollTrigger.min.js"></script>
+  <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="/js/wow.js"></script>
+  <script src="/js/function.js"></script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+(function(){
+  const html = document.documentElement;
+
+  function isDark(){ return html.getAttribute('data-theme') === 'dark'; }
+
+  function setTheme(next){
+    if(next === 'dark'){ html.setAttribute('data-theme','dark'); }
+    else { html.removeAttribute('data-theme'); }
+    try{ localStorage.setItem('deligo-theme', next); }catch(e){}
+
+    // sync button UIs
+    const desktop = document.getElementById('themeToggleDesktop');
+    const mobile  = document.getElementById('themeToggleMobile');
+    const desktopHtml = next === 'dark'
+      ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>'
+      : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>';
+    const mobileHtml  = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>';
+    if (desktop) desktop.innerHTML = desktopHtml;
+    if (mobile)  mobile.innerHTML  = mobileHtml;
+  }
+
+  function toggle(){ setTheme( isDark() ? 'light' : 'dark' ); }
+
+  // apply saved theme on load
+  let saved = 'light';
+  try{ saved = localStorage.getItem('deligo-theme') || 'light'; }catch(e){}
+  setTheme(saved);
+
+  // bind both buttons
+  ['themeToggleDesktop','themeToggleMobile'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('click', toggle);
+  });
+})();
+</script>
+
+</body>
+</html>
