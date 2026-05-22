@@ -37,14 +37,7 @@
   <link href="css/mousecursor.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
 
-<script>
-  (function () {
-    try {
-      var saved = localStorage.getItem('deligo-theme');
-      if (saved === 'dark') document.documentElement.setAttribute('data-theme','dark');
-    } catch(e) {}
-  })();
-</script>
+<script src="js/boot.js"></script>
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -155,21 +148,18 @@
               </li>
 
               <!-- Language -->
-               <li class="nav-item submenu language-switcher">
-  <a class="nav-link" href="#" id="current-language" aria-haspopup="true" aria-expanded="false">
-    <img id="lang-flag" src="images/pt.png" alt="Portuguese" width="24" height="16" style="margin-right:6px" />PT
-  </a>
-  <ul>
-    <li class="nav-item">
-      <a class="nav-link lang-option" data-lang="pt" href="#">
-        <img src="images/pt.png" alt="Português" width="24" height="16" style="margin-right:6px" />Português
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link lang-option" data-lang="en" href="#">
-        <img src="images/en.png" alt="English" width="24" height="16" style="margin-right:6px" />English
-      </a>
-    </li>
+              <li class="nav-item language-switcher">
+                <a class="nav-link" href="#" id="current-language" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img id="lang-flag" src="images/flags/gb.svg" alt="English" width="24" height="16" />
+                  <span id="lang-label">EN</span>
+                </a>
+                <div class="lang-dropdown" id="lang-dropdown" hidden>
+                  <div class="lang-search-wrap">
+                    <input type="search" class="lang-search" id="lang-search" placeholder="Search languages…" aria-label="Search languages" autocomplete="off" />
+                  </div>
+                  <div class="lang-list" id="lang-list"></div>
+                </div>
+              </li>
             </ul>
           </div>
         </div><!-- /.collapse -->
@@ -611,6 +601,7 @@
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/function.js"></script>
+  <script src="js/language-config.js"></script>
   <script src='js/language.js'></script>
   <script>
   document.getElementById("year").textContent = new Date().getFullYear();

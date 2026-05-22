@@ -1,0 +1,37 @@
+{
+  "description": "Terms and patterns the translator must NOT translate. Strings matched by 'literal' are protected by exact (case-sensitive) match; 'patterns' are JavaScript regular expressions applied to text nodes before sending to the translation API. Extend this file as new brand terms surface during QA.",
+
+  "literal": [
+    "DeliGo",
+    "DeliGo Ride",
+    "DeliGo Food",
+    "DeliGo Market",
+    "DeliGo Grocery",
+    "DeliGo Plus",
+    "DeliGo Business",
+    "DeliGo Express",
+    "DeliGo Accessories",
+    "DeliGo Technologies Inc.",
+    "PIXELMIRACLE, LDA",
+    "PIXELMIRACLE",
+    "geral@deligo.pt",
+    "contact@deligo.pt",
+    "deligo.pt",
+    "deligoeu.com",
+    "www.deligo.pt",
+    "www.deligoeu.com"
+  ],
+
+  "patterns": [
+    "https?:\\/\\/[^\\s<>\"']+",
+    "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+    "\\+\\d{1,3}[\\s\\d]{6,}",
+    "©\\s*\\d{4}",
+    "\\$\\{[^}]+\\}"
+  ],
+
+  "notes": {
+    "literal": "Exact substring match. Order matters: longer phrases first prevent partial-match breakage (e.g. 'DeliGo Ride' before 'DeliGo').",
+    "patterns": "URLs, emails, phone numbers, copyright lines, and template placeholders ({{var}} or ${var}). Translation API call wraps each match with a sentinel that survives translation and is restored after."
+  }
+}
