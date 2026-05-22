@@ -1,0 +1,805 @@
+<!DOCTYPE html><html lang="fi"><head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DeliGo - kyydit, ruoan toimitus, päivittäistavarat ja pikakuriiri. Aja, syö ja elä paremmin yhdellä supersovelluksella.">
+  <meta name="keywords" content="DeliGo, kyyti, taksi, ruoan toimitus, ruokaostokset, kuriiri, Portugali">
+  <meta name="author" content="DeliGo">
+
+  <!-- Social -->
+  <meta property="og:title" content="DeliGo - Ride, Eat, Live Better (aja, syö, elä paremmin)">
+  <meta property="og:description" content="Varaa turvallisia kyytejä, tilaa ruokaa ja elintarvikkeita tai lähetä paketteja - kaikki yhdessä sovelluksessa.">
+  <meta property="og:image" content="/images/og-cover.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.deligoeu.com/">
+
+  <!-- Page Title -->
+  <title>Ajurit</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/slicknav.min.css" rel="stylesheet">
+  <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/css/all.css" rel="stylesheet">
+  <link href="/css/animate.css" rel="stylesheet">
+  <link href="/css/magnific-popup.css" rel="stylesheet">
+  <link href="/css/mousecursor.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+
+<script src="/js/boot.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  { "@context":"https://schema.org", "@type": "Organization", "name":"DeliGo", "url":"https://www.deligoeu.com/", "logo":"https://www.deligoeu.com/images/logo.png", "sameAs":[ "https://www.facebook.com/deligoeu", "https://www.instagram.com/deligo.pt", "https://www.youtube.com/@DeliGoPT", "https://www.linkedin.com/in/deligopt", "https://www.tiktok.com/@deligo.pt" ] } }
+  </script>
+
+  <link rel="alternate" hreflang="x-default" href="/drive.html">
+  <link rel="alternate" hreflang="en" href="/drive.html">
+  <link rel="alternate" hreflang="pt" href="/pt/drive.html">
+  <link rel="alternate" hreflang="es" href="/es/drive.html">
+  <link rel="alternate" hreflang="fr" href="/fr/drive.html">
+  <link rel="alternate" hreflang="de" href="/de/drive.html">
+  <link rel="alternate" hreflang="nl" href="/nl/drive.html">
+  <link rel="alternate" hreflang="it" href="/it/drive.html">
+  <link rel="alternate" hreflang="sv" href="/sv/drive.html">
+  <link rel="alternate" hreflang="da" href="/da/drive.html">
+  <link rel="alternate" hreflang="fi" href="/fi/drive.html">
+  <link rel="alternate" hreflang="no" href="/no/drive.html"></head>
+
+<body>
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="/images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+
+
+<!-- ===== Header (Bootstrap Toggler) ===== -->
+<header class="main-header" role="banner">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Ensisijainen navigointi">
+      <div class="container align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html" aria-label="DeliGo Koti">
+  <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
+</a>
+
+        <!-- Mobile theme toggle (visible < lg) -->
+        <button id="themeToggleMobile" class="btn-icon d-inline-flex d-lg-none ms-auto me-2" type="button" aria-label="Pimeän tilan vaihtaminen">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <!-- Hamburger (only one!) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse main-menu order-lg-1" id="mainNavbar">
+          <div class="nav-menu-wrapper w-100">
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="about.html">Tietoja</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="about.html">Tietoja DeliGo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Palvelut</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Ota yhteyttä</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Työurat</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blogi / Uutiset</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="products.html">Tuotteet</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Ratsastaa</a></li>
+                  <li class="nav-item"><a class="nav-link" href="drive.html">Drive</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Ruoka</a></li>
+                  <li class="nav-item"><a class="nav-link" href="market.html">Markkinat</a></li>
+                  <li class="nav-item"><a class="nav-link" href="accessories.html">Elektroniset tarvikkeet</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="plus.html">Plus (jäsenyys)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="support.html">Tuki</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="stcustomers.html">Asiakkaat</a></li>
+                  <li class="nav-item"><a class="nav-link" href="striders.html">Ratsastajat</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stdrivers.html">Ajurit</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfood.html">Ruoka</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stcouriers.html">Kuriirit</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfleets.html">Laivaston omistajat</a></li>
+                  <li class="nav-item"><a class="nav-link" href="strestaurants.html">Ravintolat &amp; kaupat</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stbusiness.html">Liiketoiminta</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="join.html">Liity</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="jnrider.html">Ryhdy ratsastajaksi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jndriver.html">Ryhdy kuljettajaksi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jncourier.html">Ryhdy kuriiriksi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnfleet.html">Liity laivaston omistajaksi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnrestaurant.html">Lisää ravintola</a></li>
+                  <li class="nav-item"><a class="nav-link" href="franchise.html">Ryhdy franchising-yrittäjäksi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Työurat</a></li>
+                </ul>
+              </li>
+
+              <!-- Language -->
+              <li class="nav-item language-switcher">
+                <a class="nav-link" href="#" id="current-language" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img id="lang-flag" src="/images/flags/fi.svg" alt="Suomi" width="24" height="16">
+                  <span id="lang-label">FI</span>
+                </a>
+                <div class="lang-dropdown" id="lang-dropdown" hidden="">
+                  <div class="lang-search-wrap">
+                    <input type="search" class="lang-search" id="lang-search" placeholder="Etsi kieliä.." aria-label="Etsi kieliä" autocomplete="off">
+                  </div>
+                  <div class="lang-list" id="lang-list"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.collapse -->
+
+        <!-- Desktop theme toggle (nice pink button) -->
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-auto order-lg-2">
+          <button id="themeToggleDesktop" class="btn-default btn-sm" type="button" aria-pressed="false" aria-label="Pimeän tilan vaihtaminen">
+            <i class="fa-regular fa-moon"></i>
+            <span class="ms-1 d-none d-md-inline">Tumma</span>
+          </button>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+  </div>
+</header>
+<!-- ===== /Header ===== -->
+
+	
+	<!-- ===== Hero / Driver Signup ===== -->
+<section class="py-5 bg-dark text-white" style="background: url('/images/hero-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold text-white">Tienaa rahaa ajamalla DeliGo:llä Portugalissa - omalla aikataulullasi</h1>
+        
+      </div>
+      <div class="col-lg-5">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h3 class="h5 mb-3">Rekisteröidy kuljettajaksi</h3>
+            <form>
+              <div class="mb-3">
+                <label for="d-email" class="form-label">Sähköposti</label>
+                <input id="d-email" type="email" class="form-control" placeholder="your@email.com" required="">
+              </div>
+              <div class="mb-3">
+                <label for="d-phone" class="form-label">Puhelinnumero</label>
+                <div class="input-group">
+                  <span class="input-group-text">+351</span>
+                  <input id="d-phone" type="tel" class="form-control" placeholder="9XXXXXXXXXX" required="">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="d-city" class="form-label">Kaupunki</label>
+                <select id="d-city" class="form-select" required="">
+                  <option value="">Valitse kaupunkisi</option>
+                  <option>Lissabon</option>
+                  <option>Porto</option>
+                  <option>Braga</option>
+                  <option>Coimbra</option>
+                  <option>Faro</option>
+                </select>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="d-terms" required="">
+                <label class="form-check-label" for="d-terms">
+                  Hyväksyn <a href="term.html" target="_blank">Käyttöehdot</a> ja <a href="privacy.html" target="_blank">Tietosuojakäytäntö</a>.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Rekisteröidy &amp; aloita ajaminen</button>
+              <p class="small text-muted mt-2 mb-0">Hallitsetko useita kuljettajia? <a href="fleet.html">Liity laivastokumppaniksi</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why drive with DeliGo ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Miksi ajaa DeliGo:llä?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 border rounded-3 h-100">
+          <i class="fa-solid fa-clock fa-2x mb-3"></i>
+          <h3 class="h5">Joustava aikataulu</h3>
+          <p>Voit ajaa milloin haluat - kokoaikaisesti, osa-aikaisesti tai vain muutaman tunnin viikossa. Voit aina hallita aikaasi.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded-3 h-100">
+          <i class="fa-solid fa-wallet fa-2x mb-3"></i>
+          <h3 class="h5">Viikoittaiset maksut</h3>
+          <p>Saat viikoittaisen maksun avoimilla tuloilla ja ilman piilotettuja maksuja. Seuraa matkojasi ja maksuja reaaliajassa.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded-3 h-100">
+          <i class="fa-solid fa-shield-heart fa-2x mb-3"></i>
+          <h3 class="h5">Turvallisuus ja tuki</h3>
+          <p>Sovelluksen sisäinen SOS, live-tuki ja reitin jakaminen pitävät sinut ja matkustajasi turvassa jokaisella matkalla.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Get Started ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Miten päästä alkuun</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded-3 h-100">
+          <span class="badge bg-primary mb-3">Vaihe 1</span>
+          <h3 class="h5">Hae verkossa</h3>
+          <p>Täytä yllä oleva rekisteröintilomake. Otamme sinuun yhteyttä sähköpostitse tai sovelluksen sisällä, jotta voimme jakaa tarvittavan asiakirjaluettelon.</p>
+          <ul class="small">
+            <li>Voimassa oleva ajokortti (Portugali/EU)</li>
+            <li>Henkilökortti tai oleskelukortti</li>
+            <li>Ajoneuvon asiakirjat (jos omistat auton)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded-3 h-100">
+          <span class="badge bg-primary mb-3">Vaihe 2</span>
+          <h3 class="h5">Lataa asiakirjasi</h3>
+          <p>Lataa asiakirjasi DeliGo Driver App -sovelluksen kautta. Kun profiilisi on vahvistettu, se aktivoituu.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded-3 h-100">
+          <span class="badge bg-primary mb-3">Vaihe 3</span>
+          <h3 class="h5">Ei autoa? Ei ongelmaa</h3>
+          <p>Liity kalustokumppaniksi tai vuokraa ajoneuvo markkinapaikan kautta. Yhdistämme sinut kaupungissasi käytettävissä oleviin vaihtoehtoihin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How the app works ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Miten DeliGo Kuljettajasovellus toimii?</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <ol class="list-group list-group-numbered">
+  <li class="list-group-item">Vastaanota lähistöllä olevia kyydityspyyntöjä - hyväksy haluamasi kyydit.</li>
+  <li class="list-group-item">Seuraa sovelluksen navigointia noutaaksesi matkustajasi.</li>
+  <li class="list-group-item">Aja määränpäähän ja lopeta matka, kun se on valmis.</li>
+  <li class="list-group-item">Ansaitse enemmän ruuhka-aikoina tai kysytyimmillä alueilla.</li>
+  <li class="list-group-item">Seuraa päivittäisiä ansioita ja matkahistoriaa suoraan sovelluksen kojelaudalta.</li>
+  <li class="list-group-item">Saat välittömiä reittipäivityksiä ja turvallisuushälytyksiä jokaisen matkan aikana.</li>
+  <li class="list-group-item">Arvostele matkustajia ja saat arvosanoja, jotta voit rakentaa ammattimaisen kuljettajaprofiilisi.</li>
+  <li class="list-group-item">Saat viikoittaisia tulospalkkioita ja kannustimia huippuluokan palvelusta.</li>
+</ol>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+          <img src="/images/driver-app-mock.png" alt="DeliGo Kuljettajasovellus" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQs ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Usein kysytyt kysymykset</h2>
+    <div class="accordion" id="driverFaq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">
+            Voinko ajaa osa-aikaisesti?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" aria-labelledby="q1" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Kyllä! Voit mennä verkkoon ja hyväksyä matkoja milloin tahansa. Et tarvitse kiinteitä vuoroja tai aikatauluja.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-controls="a2">
+            Miten saan maksun?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Viikoittaiset tulosi siirretään suoraan pankkitilillesi. Voit seurata kaikkia ansioita DeliGo-sovelluksessa reaaliajassa.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-controls="a3">
+            Entä jos en omista autoa?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Voit liittyä johonkin ajoneuvokumppanistamme tai vuokrata ajoneuvon markkinapaikkamme kautta - me yhdistämme sinut käytettävissä oleviin vaihtoehtoihin.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-controls="a4">
+            Mitä asiakirjoja tarvitaan?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Tarvitset voimassa olevan ajokortin, henkilötodistuksen tai oleskelukortin, ajoneuvon rekisteröinnin/vakuutuksen (tarvittaessa) ja verotunnisteen. Joissakin kaupungeissa saatetaan vaatia ylimääräisiä asiakirjoja.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-controls="a5">
+            Miten saan tukea?
+          </button>
+        </h2>
+        <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Voit ottaa meihin yhteyttä sovelluksen sisäisen chatin, sähköpostin tai käyttökeskuksemme kautta. Hätätapauksissa käytä sovelluksen SOS-painiketta.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h2 class="h1 fw-bold">Ole oma pomosi. Aloita ajaminen DeliGo:n kanssa jo tänään.</h2>
+        <p class="lead mb-0">Täytä yllä oleva lomake - hakemuksen tekeminen vie vain 2 minuuttia. Kun sinut on hyväksytty, voit aloittaa kyytien vastaanottamisen heti.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <a href="#top" class="btn btn-primary btn-lg me-2">Hae nyt</a>
+        <a href="support.html" class="btn btn-outline-secondary btn-lg">Kuljettajan tuki</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Page Drivers Start -->
+    <div class="page-drivers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-1.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>john Smith</h3>
+                            <p>vanhempi autonkuljettaja</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-2.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>taylor Smith</h3>
+                            <p>kaupunkikierroksen opas</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-3.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>jordan Brown</h3>
+                            <p>etäisyyskuljettaja</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-4.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>davis Casey</h3>
+                            <p>matka-asiantuntija</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.8s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-5.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>morgan lee</h3>
+                            <p>matkakonsultti</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="1s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-6.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>carlos mendes</h3>
+                            <p>lentokenttäkuljetus</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="1.2s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-7.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>riley Walker</h3>
+                            <p>autonkuljettaja</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="1.4s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-8.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>avery Hall</h3>
+                            <p>sukkulakuljettaja</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Drivers End -->
+
+    
+	<!-- Footer -->
+  <footer class="main-footer bg-section" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about-footer">
+            <div class="footer-logo"><img src="/images/footer-logo.svg" alt="DeliGo" loading="lazy"></div>
+            <div class="about-footer-content">
+              <p class="footer-text">
+                Herkullisista aterioista sujuviin kyyteihin, DeliGo tekee jokapäiväisestä elämästä helpompaa, nopeampaa ja kätevämpää. Tutustu lisävarusteisiin, kuten kannettaviin tietokoneisiin ja puhelimiin, ja tutustu jännittäviin uramahdollisuuksiin kanssamme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-quick-links">
+            <h3>Oikeuspolitiikka</h3>
+            <ul>
+              <li><a href="term.html">Ehdot ja edellytykset</a></li>
+              <li><a href="privacy.html">Tietosuojakäytäntö</a></li>
+              <li><a href="notice.html">Oikeudellinen huomautus</a></li>
+              <li><a href="accessibility.html">Saavutettavuus</a></li>
+              <li><a href="complaintsbook.html">Valituskirja</a></li>
+              <li><a href="cookies.html">Evästeet</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-menu">
+            <h3>Pikalinkit</h3>
+            <ul>
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="about.html">Tietoja</a></li>
+              <li><a href="cab.html">Taksi</a></li>
+              <li><a href="rider.html">Ratsastaja</a></li>
+              <li><a href="food.html">Ruoka</a></li>
+              <li><a href="services.html">Palvelut</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-newsletter">
+            <h3>Tilaa uutiskirje</h3>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST" aria-label="Uutiskirjeeseen liittyminen">
+                <div class="form-group">
+                  <label for="mail" class="visually-hidden">Sähköposti</label>
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Sähköposti ..." required="">
+                  <button type="submit" class="section-icon-btn" aria-label="Lähetä">
+                    <img src="/images/arrow-white.svg" alt="">
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-copyright-text">
+			<p>© <span id="year"></span> DeliGo Technologies Inc. Kaikki oikeudet pidätetään.</p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-5">
+            <div class="footer-social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/@DeliGoPT" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/deligoeu" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/deligo.pt" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/deligopt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.tiktok.com/@deligo.pt" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<!-- ✅ Mobile submenu toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () { const mql = window.matchMedia('(max-width: 991.98px)'); function bindSubmenuToggles(){ document.querySelectorAll('.main-header .submenu > a').forEach(function(a){ a.addEventListener('click', function(e){ if(mql.matches){ e.preventDefault(); const li = this.parentElement; li.classList.toggle('open'); } }); }); } bindSubmenuToggles(); });
+</script>
+
+
+
+
+  
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/validator.min.js"></script>
+  <script src="/js/jquery.slicknav.js"></script>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.counterup.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/SmoothScroll.js"></script>
+  <script src="/js/parallaxie.js"></script>
+  <script src="/js/gsap.min.js"></script>
+  <script src="/js/magiccursor.js"></script>
+  <script src="/js/SplitText.js"></script>
+  <script src="/js/ScrollTrigger.min.js"></script>
+  <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="/js/wow.js"></script>
+  <script src="/js/function.js"></script>
+  <script src="/js/language-config.js"></script>
+  <script src="/js/language.js"></script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+(function(){ const html = document.documentElement; function isDark(){ return html.getAttribute('data-theme') === 'dark'; } function setTheme(next){ if(next === 'dark'){ html.setAttribute('data-theme','dark'); } else { html.removeAttribute('data-theme'); } try{ localStorage.setItem('deligo-theme', next); }catch(e){} // synkronointipainikkeiden käyttöliittymät const desktop = document.getElementById('themeToggleDesktop'); const mobile = document.getElementById('themeToggleMobile'); const desktopHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>' : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>'; const mobileHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>'; if (desktop) desktop.innerHTML = desktopHtml; if (mobile) mobile.innerHTML = mobileHtml; } function toggle(){ setTheme( isDark() ? 'light' : 'dark' ); } // soveltaa tallennettua teemaa latauksen yhteydessä let saved = 'light'; try{ saved = localStorage.getItem('deligo-theme') || 'light'; }catch(e){} setTheme(saved); // bind both buttons ['themeToggleDesktop','themeToggleMobile'].forEach(id=>{ const el = document.getElementById(id); if(el) el.addEventListener('click', toggle); }); })();
+</script>
+
+
+</body></html>

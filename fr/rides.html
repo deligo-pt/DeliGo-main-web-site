@@ -1,0 +1,594 @@
+<!DOCTYPE html><html lang="fr"><head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DeliGo§ - transport, livraison de nourriture, épicerie et courrier express. Roulez, mangez, vivez mieux avec une super application.">
+  <meta name="keywords" content="DeliGo, transport, taxi, livraison de nourriture, épicerie, courrier, Portugal">
+  <meta name="author" content="DeliGo">
+
+  <!-- Social -->
+  <meta property="og:title" content="DeliGo - Rouler, manger, vivre mieux">
+  <meta property="og:description" content="Réservez des trajets en toute sécurité, commandez de la nourriture et des produits d'épicerie, ou envoyez des colis - le tout en une seule application.">
+  <meta property="og:image" content="/images/og-cover.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.deligoeu.com/">
+
+  <!-- Page Title -->
+  <title>DeliGo - Ride</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/slicknav.min.css" rel="stylesheet">
+  <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/css/all.css" rel="stylesheet">
+  <link href="/css/animate.css" rel="stylesheet">
+  <link href="/css/magnific-popup.css" rel="stylesheet">
+  <link href="/css/mousecursor.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+
+<script src="/js/boot.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {"@context" :"https://schema.org", "@type" : "Organisation", "name" :"DeliGo", "url" :"https://www.deligoeu.com/", "logo" :"https://www.deligoeu.com/images/logo.png", "sameAs" :["https://www.facebook.com/deligoeu", "https://www.instagram.com/deligo.pt", "https://www.youtube.com/@DeliGoPT", "https://www.linkedin.com/in/deligopt", "https://www.tiktok.com/@deligo.pt" ] } }
+  </script>
+
+  <link rel="alternate" hreflang="x-default" href="/rides.html">
+  <link rel="alternate" hreflang="en" href="/rides.html">
+  <link rel="alternate" hreflang="pt" href="/pt/rides.html">
+  <link rel="alternate" hreflang="es" href="/es/rides.html">
+  <link rel="alternate" hreflang="fr" href="/fr/rides.html">
+  <link rel="alternate" hreflang="de" href="/de/rides.html">
+  <link rel="alternate" hreflang="nl" href="/nl/rides.html">
+  <link rel="alternate" hreflang="it" href="/it/rides.html">
+  <link rel="alternate" hreflang="sv" href="/sv/rides.html">
+  <link rel="alternate" hreflang="da" href="/da/rides.html">
+  <link rel="alternate" hreflang="fi" href="/fi/rides.html">
+  <link rel="alternate" hreflang="no" href="/no/rides.html"></head>
+
+<body>
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="/images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+
+
+<!-- ===== Header (Bootstrap Toggler) ===== -->
+<header class="main-header" role="banner">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Navigation primaire">
+      <div class="container align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html" aria-label="DeliGo Accueil">
+  <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
+</a>
+        <!-- Mobile theme toggle (visible < lg) -->
+        <button id="themeToggleMobile" class="btn-icon d-inline-flex d-lg-none ms-auto me-2" type="button" aria-label="Basculer en mode sombre">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <!-- Hamburger (only one!) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse main-menu order-lg-1" id="mainNavbar">
+          <div class="nav-menu-wrapper w-100">
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="about.html">A propos de</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="about.html">À propos de DeliGo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Carrières</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog / Actualités</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="products.html">Produits</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Les manèges</a></li>
+                  <li class="nav-item"><a class="nav-link" href="drive.html">Conduire</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Alimentation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="market.html">Marché</a></li>
+                  <li class="nav-item"><a class="nav-link" href="accessories.html">Accessoires électroniques</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="plus.html">Plus (adhésion)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="support.html">Soutien</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="stcustomers.html">Clients</a></li>
+                  <li class="nav-item"><a class="nav-link" href="striders.html">Cavaliers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stdrivers.html">Conducteurs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfood.html">Alimentation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stcouriers.html">Courriers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfleets.html">Propriétaires de flotte</a></li>
+                  <li class="nav-item"><a class="nav-link" href="strestaurants.html">Restaurants et magasins</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stbusiness.html">Entreprises</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="join.html">Rejoindre</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="jnrider.html">Devenir cavalier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jndriver.html">Devenir conducteur</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jncourier.html">Devenir coursier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnfleet.html">Adhérer en tant que propriétaire de flotte</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnrestaurant.html">Ajouter un restaurant</a></li>
+                  <li class="nav-item"><a class="nav-link" href="franchise.html">Devenir franchisé</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Carrières</a></li>
+                </ul>
+              </li>
+
+               <!-- Language -->
+               <li class="nav-item language-switcher">
+                 <a class="nav-link" href="#" id="current-language" role="button" aria-haspopup="true" aria-expanded="false">
+                   <img id="lang-flag" src="/images/flags/fr.svg" alt="Français" width="24" height="16">
+                   <span id="lang-label">FR</span>
+                 </a>
+                 <div class="lang-dropdown" id="lang-dropdown" hidden="">
+                   <div class="lang-search-wrap">
+                     <input type="search" class="lang-search" id="lang-search" placeholder="Recherche de langues.." aria-label="Recherche de langues" autocomplete="off">
+                   </div>
+                   <div class="lang-list" id="lang-list"></div>
+                 </div>
+               </li>
+            </ul>
+          </div>
+        </div><!-- /.collapse -->
+
+        <!-- Desktop theme toggle (nice pink button) -->
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-auto order-lg-2">
+          <button id="themeToggleDesktop" class="btn-default btn-sm" type="button" aria-pressed="false" aria-label="Basculer en mode sombre">
+            <i class="fa-regular fa-moon"></i>
+            <span class="ms-1 d-none d-md-inline">Sombre</span>
+          </button>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+  </div>
+</header>
+<!-- ===== /Header ===== -->
+	
+	
+<div class="hero">
+		<div class="hero-section bg-section parallaxie">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Hero Content Start -->
+                        <div class="hero-content">
+                            <div class="section-title">
+                                
+                                <h1 class="text-anime-style-3" data-cursor="-opaque">Bienvenue à DeliGo <br> Livrer avec Deligo Rider</h1>
+                                <p class="wow fadeInUp" data-wow-delay="0.25s">Rejoignez Deligo Rider et commencez à gagner de l'argent à votre rythme. Avec des horaires flexibles, d'excellents avantages et un soutien à chaque étape, vous pouvez transformer votre temps libre en revenu supplémentaire tout en explorant votre ville.</p>
+                            </div>
+    
+                            <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
+                               
+                                <a href="#" class="btn-default btn-highlighted">Devenir cavalier</a>
+                            </div>
+                        </div>
+                        <!-- Hero Content End -->                    
+                    </div>
+                </div>
+            </div>
+        </div>
+		 </div>
+
+
+    <!-- Page About Us Section Start -->
+    <div class="about-us page-about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Us Image Start -->
+                    <div class="about-image">
+                        <!-- About Image Start -->
+                        <div class="about-img-1">
+                            <figure class="reveal">
+                                <img src="/images/about-img-1.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- About Image End -->
+
+                        <!-- About Image Start -->
+                        <div class="about-img-2">
+                            <figure class="reveal">
+                                <img src="/images/about-img-2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- About Image End -->
+                    </div>
+                    <!-- About Us Image End -->
+                </div>
+    
+                <div class="col-lg-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                          
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Pourquoi rouler avec Deligo ?</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Nous croyons qu'il faut créer plus qu'un simple service - nous construisons un écosystème qui relie les personnes, les entreprises et les communautés avec rapidité, sécurité et confiance. </p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- About Content Body Start -->
+                        <div class="about-content-body">
+                            <!-- About Trusted Booking Start -->
+                            <div class="about-trusted-booking wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="/images/icon-about-trusted-1.png" alt="">
+                                </div>
+                                <div class="trusted-booking-content">
+                                    <h3>Connectez-vous et partez : Flexibilité ultime</h3>
+                                    <p>Vous avez la liberté de gagner de l'argent quand vous le souhaitez. Il vous suffit de vous connecter à l'application lorsque vous êtes prêt à commencer et de vous déconnecter lorsque vous avez terminé.</p>
+                                </div>
+                            </div>
+                            <!-- About Trusted Booking End -->
+                             
+                            <!-- About Trusted Booking Start -->
+                            <div class="about-trusted-booking wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="/images/icon-about-trusted-2.png" alt="">
+                                </div>
+                                <div class="trusted-booking-content">
+                                    <h3>Des trajets sûrs et sécurisés</h3>
+                                    <p>Votre sécurité est notre priorité absolue. Chaque trajet DeliGo est garanti par des chauffeurs de confiance, un suivi en temps réel et une assistance fiable, afin que vous puissiez voyager en toute confiance.</p>
+                                </div>
+                            </div>
+							
+							<div class="about-trusted-booking wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="/images/icon-about-trusted-3.png" alt="">
+                                </div>
+                                <div class="trusted-booking-content">
+                                    <h3>Livraisons rapides et fraîches</h3>
+                                    <p>Qu'il s'agisse de denrées alimentaires, de produits d'épicerie ou de colis, nous livrons rapidement sans compromettre la qualité, en garantissant la fraîcheur et la fiabilité à chaque fois.</p>
+                                </div>
+                            </div>
+							<div class="about-trusted-booking wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="/images/icon-about-trusted-3.png" alt="">
+                                </div>
+                                <div class="trusted-booking-content">
+                                    <h3>La confiance des communautés</h3>
+                                    <p>DeliGo est plus qu'une application - c'est un partenaire de la vie quotidienne, auquel font confiance des milliers de clients, de conducteurs et d'entreprises à travers la communauté.</p>
+                                </div>
+                            </div>
+                            <!-- About Trusted Booking End -->
+                        </div>
+                        <!-- About Content Body End -->
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page About Us Section End -->
+
+
+    <!-- Vision Mission Section Start -->
+    <div class="vision-mission">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                       
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">L'excellence et l'innovation au service du DeliGo</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Sidebar Our Vision Mission Nav start -->
+					<div class="our-projects-nav wow fadeInUp" data-wow-delay="0.25s">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-selected="true">notre vision</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-selected="false">notre mission</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#approach" type="button" role="tab" aria-selected="false">notre approche</button>
+                            </li>
+                        </ul>
+					</div>
+					<!-- Sidebar Our Vision Mission Nav End -->
+
+                    <!-- Vision Mission Box Start -->
+                    <div class="vision-mission-box tab-content" id="myTabContent">
+                        <!-- Our Vision Item Start -->
+                        <div class="our-vision-item tab-pane fade show active" id="vision" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <!-- Vision Mission Content Start -->
+                                    <div class="vision-mission-content">
+                                        <!-- Section Title Start -->
+                                        <div class="section-title">
+                                           
+                                            <h2 class="text-anime-style-3" data-cursor="-opaque">Notre vision</h2>
+                                            <p class="wow fadeInUp" data-wow-delay="0.25s">Devenir un leader mondial de la mobilité intelligente et des solutions de livraison, en façonnant l'avenir de la façon dont les gens se déplacent, mangent, font leurs courses et se connectent. Nous imaginons un monde où la technologie et la communauté travaillent main dans la main pour créer des expériences quotidiennes transparentes, sûres et durables.</p>
+                                        </div>
+                                        <!-- Section Title End -->
+
+                                        <!-- Vision Mission List Start -->
+                                        <div class="vision-mission-list wow fadeInUp" data-wow-delay="0.5s">
+                                            <ul>
+                                                <li>Mobilité sans limites : des trajets sûrs et fiables accessibles à tous.</li>
+                                                <li>La commodité sans compromis : des aliments, des produits d'épicerie et des produits de première nécessité livrés rapidement.</li>
+                                                <li>La durabilité au cœur du développement : construire des systèmes respectueux de l'environnement pour un avenir meilleur.</li>
+												<li>Ambition mondiale, attention locale : servir les communautés tout en visant un impact mondial.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Vision Mission List End -->
+                                    </div>
+                                    <!-- Vision Mission Content End -->
+                                </div>
+    
+                                <div class="col-lg-6">
+                                    <!-- Vision Image Start -->
+                                    <div class="vision-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="/images/our-vision-img.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Vision Image End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Our Vision Item End -->
+
+                        <!-- Our Vision Item Start -->
+                        <div class="our-vision-item tab-pane fade" id="mission" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <!-- Vision Mission Content Start -->
+                                    <div class="vision-mission-content">
+                                        <!-- Section Title Start -->
+                                        <div class="section-title">
+                                          
+                                            <h2 data-cursor="-opaque">Notre mission</h2>
+                                            <p>Chez DeliGo, notre mission est de simplifier la vie quotidienne grâce à l'innovation, la confiance et l'attention. Nous visons à connecter les personnes et les entreprises en intégrant le covoiturage, la livraison de nourriture, l'épicerie, la livraison de colis et les produits technologiques essentiels dans un écosystème unifié.</p>
+                                        </div>
+                                        <!-- Section Title End -->
+
+                                        <!-- Vision Mission List Start -->
+                                        <div class="vision-mission-list">
+                                            <ul>
+                                                <li>Pour se faciliter la vie, une touche à la fois.</li>
+                                                <li>Permettre aux chauffeurs, aux coursiers, aux restaurateurs et aux propriétaires de flottes de bénéficier d'opportunités équitables.</li>
+                                                <li>Garantir à chaque client des services abordables, rapides et fiables.</li>
+												<li>Innover en permanence et proposer des solutions qui s'adaptent aux modes de vie modernes.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Vision Mission List End -->
+                                    </div>
+                                    <!-- Vision Mission Content End -->
+                                </div>
+    
+                                <div class="col-lg-6">
+                                    <!-- Vision Image Start -->
+                                    <div class="vision-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="/images/our-mission-img.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Vision Image End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Our Vision Item End -->
+
+                        <!-- Our Mission Item Start -->
+                        <div class="our-mission-item tab-pane fade" id="approach" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <!-- Vision Mission Content Start -->
+                                    <div class="vision-mission-content">
+                                        <!-- Section Title Start -->
+                                        <div class="section-title">
+                                          
+                                            <h2 data-cursor="-opaque">Notre approche</h2>
+                                            <p>Nous ne nous contentons pas de créer des services, nous créons des expériences. Chaque décision est guidée par l'attention, l'innovation et un souci constant de qualité.</p>
+                                        </div>
+                                        <!-- Section Title End -->
+
+                                        <!-- Vision Mission List Start -->
+                                        <div class="vision-mission-list">
+                                            <ul>
+                                                <li>Nous croyons en l'autonomisation des personnes - des chauffeurs et coursiers aux restaurateurs et propriétaires de flotte - en leur donnant des opportunités équitables et des outils pour se développer. Notre technologie est conçue dans un but précis : des solutions rapides, sûres et fiables qui simplifient la vie tout en gagnant la confiance.</li>
+                                                <li>La durabilité est au cœur de notre démarche. En explorant la mobilité écologique, des itinéraires de livraison plus intelligents et des solutions axées sur la communauté, nous façonnons un avenir à la fois efficace et responsable.</li>
+												
+												<li>Avec des normes mondiales et une touche locale, notre approche est simple : offrir l'excellence aujourd'hui, tout en construisant pour les besoins de demain.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <!-- Vision Mission List End -->
+                                    </div>
+                                    <!-- Vision Mission Content End -->
+                                </div>
+    
+                                <div class="col-lg-6">
+                                    <!-- Vision Image Start -->
+                                    <div class="vision-image">
+                                        <figure class="image-anime reveal">
+                                            <img src="/images/our-approach-img.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Vision Image End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Our Mission Item End -->
+                    </div>
+                    <!-- Vision Mission Box End -->                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision Mission Section End -->
+
+
+
+
+
+ <!-- Footer -->
+  <footer class="main-footer bg-section" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about-footer">
+            <div class="footer-logo"><img src="/images/footer-logo.svg" alt="DeliGo" loading="lazy"></div>
+            <div class="about-footer-content">
+              <p class="footer-text">
+                Des repas délicieux aux déplacements en douceur, DeliGo rend la vie quotidienne plus facile, plus rapide et plus pratique. Découvrez des accessoires tels que des ordinateurs portables et des téléphones, et découvrez des opportunités de carrière passionnantes chez nous.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-quick-links">
+            <h3>Politique juridique</h3>
+            <ul>
+              <li><a href="term.html">Conditions générales d'utilisation</a></li>
+              <li><a href="privacy.html">Politique de confidentialité</a></li>
+              <li><a href="notice.html">Avis juridique</a></li>
+              <li><a href="accessibility.html">Accessibilité</a></li>
+              <li><a href="complaintsbook.html">Registre des plaintes</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-menu">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="about.html">A propos de</a></li>
+              <li><a href="cab.html">Cabine</a></li>
+              <li><a href="rider.html">Cavalier</a></li>
+              <li><a href="food.html">Alimentation</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-newsletter">
+            <h3>S'abonner à la lettre d'information</h3>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST" aria-label="Inscription au bulletin d'information">
+                <div class="form-group">
+                  <label for="mail" class="visually-hidden">Courriel</label>
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Courriel ..." required="">
+                  <button type="submit" class="section-icon-btn" aria-label="Soumettre">
+                    <img src="/images/arrow-white.svg" alt="">
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-copyright-text">
+			<p>© <span id="year"></span> DeliGo Technologies Inc. Tous droits réservés.</p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-5">
+            <div class="footer-social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/@DeliGoPT" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/deligoeu" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/deligo.pt" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/deligopt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.tiktok.com/@deligo.pt" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<!-- ✅ Mobile submenu toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () { const mql = window.matchMedia('(max-width : 991.98px)') ; function bindSubmenuToggles(){ document.querySelectorAll('.main-header .submenu > a').forEach(function(a){ a.addEventListener('click', function(e){ if(mql.matches){ e.preventDefault() ; const li = this.parentElement ; li.classList.toggle('open') ; } }) ; }) ; } bindSubmenuToggles() ; }) ;
+</script>
+
+
+
+
+  
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/validator.min.js"></script>
+  <script src="/js/jquery.slicknav.js"></script>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.counterup.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/SmoothScroll.js"></script>
+  <script src="/js/parallaxie.js"></script>
+  <script src="/js/gsap.min.js"></script>
+  <script src="/js/magiccursor.js"></script>
+  <script src="/js/SplitText.js"></script>
+  <script src="/js/ScrollTrigger.min.js"></script>
+  <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="/js/wow.js"></script>
+  <script src="/js/function.js"></script>
+  <script src="/js/language-config.js"></script>
+  <script src="/js/language.js"></script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear() ;
+</script>
+
+<script>
+(function(){ const html = document.documentElement ; function isDark(){ return html.getAttribute('data-theme') === 'dark' ; } function setTheme(next){ if(next === 'dark'){ html.setAttribute('data-theme', 'dark') ; } else { html.removeAttribute('data-theme') ; } try{ localStorage.setItem('deligo-theme', next) ; }catch(e){} // sync button UIs const desktop = document.getElementById('themeToggleDesktop') ; const mobile = document.getElementById('themeToggleMobile') ; const desktopHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>' : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>' ; const mobileHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>' ; if (desktop) desktop.innerHTML = desktopHtml ; if (mobile) mobile.innerHTML = mobileHtml ; } function toggle(){ setTheme( isDark() ? 'light' : 'dark' ) ; } // appliquer le thème sauvegardé au chargement let saved = 'light' ; try{ saved = localStorage.getItem('deligo-theme') || 'light' ; }catch(e){} setTheme(saved) ; // lier les deux boutons ['themeToggleDesktop', 'themeToggleMobile'].forEach(id=>{ const el = document.getElementById(id) ; if(el) el.addEventListener('click', toggle) ; }) ; }) ;
+</script>
+
+
+</body></html>

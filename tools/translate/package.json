@@ -1,0 +1,22 @@
+{
+  "name": "deligo-translate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeliGo multi-language pipeline. Parses English HTML pages, batches text through DeepL (with provider abstraction), writes per-language folders at the project root.",
+  "type": "module",
+  "main": "translate.js",
+  "scripts": {
+    "translate": "node translate.js",
+    "validate": "node validate.js",
+    "estimate": "node translate.js --estimate"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "deepl-node": "^1.13.0",
+    "dotenv": "^16.4.5"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,805 @@
+<!DOCTYPE html><html lang="fr"><head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DeliGo§ - transport, livraison de nourriture, épicerie et courrier express. Roulez, mangez, vivez mieux avec une super application.">
+  <meta name="keywords" content="DeliGo, transport, taxi, livraison de nourriture, épicerie, courrier, Portugal">
+  <meta name="author" content="DeliGo">
+
+  <!-- Social -->
+  <meta property="og:title" content="DeliGo - Rouler, manger, vivre mieux">
+  <meta property="og:description" content="Réservez des trajets en toute sécurité, commandez de la nourriture et des produits d'épicerie, ou envoyez des colis - le tout en une seule application.">
+  <meta property="og:image" content="/images/og-cover.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.deligoeu.com/">
+
+  <!-- Page Title -->
+  <title>Conducteurs</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/slicknav.min.css" rel="stylesheet">
+  <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/css/all.css" rel="stylesheet">
+  <link href="/css/animate.css" rel="stylesheet">
+  <link href="/css/magnific-popup.css" rel="stylesheet">
+  <link href="/css/mousecursor.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
+
+<script src="/js/boot.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {"@context" :"https://schema.org", "@type" : "Organisation", "name" :"DeliGo", "url" :"https://www.deligoeu.com/", "logo" :"https://www.deligoeu.com/images/logo.png", "sameAs" :["https://www.facebook.com/deligoeu", "https://www.instagram.com/deligo.pt", "https://www.youtube.com/@DeliGoPT", "https://www.linkedin.com/in/deligopt", "https://www.tiktok.com/@deligo.pt" ] } }
+  </script>
+
+  <link rel="alternate" hreflang="x-default" href="/drive.html">
+  <link rel="alternate" hreflang="en" href="/drive.html">
+  <link rel="alternate" hreflang="pt" href="/pt/drive.html">
+  <link rel="alternate" hreflang="es" href="/es/drive.html">
+  <link rel="alternate" hreflang="fr" href="/fr/drive.html">
+  <link rel="alternate" hreflang="de" href="/de/drive.html">
+  <link rel="alternate" hreflang="nl" href="/nl/drive.html">
+  <link rel="alternate" hreflang="it" href="/it/drive.html">
+  <link rel="alternate" hreflang="sv" href="/sv/drive.html">
+  <link rel="alternate" hreflang="da" href="/da/drive.html">
+  <link rel="alternate" hreflang="fi" href="/fi/drive.html">
+  <link rel="alternate" hreflang="no" href="/no/drive.html"></head>
+
+<body>
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="/images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+
+
+<!-- ===== Header (Bootstrap Toggler) ===== -->
+<header class="main-header" role="banner">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Navigation primaire">
+      <div class="container align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html" aria-label="DeliGo Accueil">
+  <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
+</a>
+
+        <!-- Mobile theme toggle (visible < lg) -->
+        <button id="themeToggleMobile" class="btn-icon d-inline-flex d-lg-none ms-auto me-2" type="button" aria-label="Basculer en mode sombre">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <!-- Hamburger (only one!) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse main-menu order-lg-1" id="mainNavbar">
+          <div class="nav-menu-wrapper w-100">
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="about.html">A propos de</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="about.html">À propos de DeliGo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Carrières</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog / Actualités</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="products.html">Produits</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Les manèges</a></li>
+                  <li class="nav-item"><a class="nav-link" href="drive.html">Conduire</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Alimentation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="market.html">Marché</a></li>
+                  <li class="nav-item"><a class="nav-link" href="accessories.html">Accessoires électroniques</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="plus.html">Plus (adhésion)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="support.html">Soutien</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="stcustomers.html">Clients</a></li>
+                  <li class="nav-item"><a class="nav-link" href="striders.html">Cavaliers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stdrivers.html">Conducteurs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfood.html">Alimentation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stcouriers.html">Courriers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfleets.html">Propriétaires de flotte</a></li>
+                  <li class="nav-item"><a class="nav-link" href="strestaurants.html">Restaurants et magasins</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stbusiness.html">Entreprises</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="join.html">Rejoindre</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="jnrider.html">Devenir cavalier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jndriver.html">Devenir conducteur</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jncourier.html">Devenir coursier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnfleet.html">Adhérer en tant que propriétaire de flotte</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnrestaurant.html">Ajouter un restaurant</a></li>
+                  <li class="nav-item"><a class="nav-link" href="franchise.html">Devenir franchisé</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Carrières</a></li>
+                </ul>
+              </li>
+
+              <!-- Language -->
+              <li class="nav-item language-switcher">
+                <a class="nav-link" href="#" id="current-language" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img id="lang-flag" src="/images/flags/fr.svg" alt="Français" width="24" height="16">
+                  <span id="lang-label">FR</span>
+                </a>
+                <div class="lang-dropdown" id="lang-dropdown" hidden="">
+                  <div class="lang-search-wrap">
+                    <input type="search" class="lang-search" id="lang-search" placeholder="Recherche de langues.." aria-label="Recherche de langues" autocomplete="off">
+                  </div>
+                  <div class="lang-list" id="lang-list"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.collapse -->
+
+        <!-- Desktop theme toggle (nice pink button) -->
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-auto order-lg-2">
+          <button id="themeToggleDesktop" class="btn-default btn-sm" type="button" aria-pressed="false" aria-label="Basculer en mode sombre">
+            <i class="fa-regular fa-moon"></i>
+            <span class="ms-1 d-none d-md-inline">Sombre</span>
+          </button>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+  </div>
+</header>
+<!-- ===== /Header ===== -->
+
+	
+	<!-- ===== Hero / Driver Signup ===== -->
+<section class="py-5 bg-dark text-white" style="background: url('/images/hero-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold text-white">Gagner de l'argent en conduisant avec DeliGo au Portugal - à votre rythme</h1>
+        
+      </div>
+      <div class="col-lg-5">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h3 class="h5 mb-3">S'inscrire en tant que conducteur</h3>
+            <form>
+              <div class="mb-3">
+                <label for="d-email" class="form-label">Courriel</label>
+                <input id="d-email" type="email" class="form-control" placeholder="your@email.com" required="">
+              </div>
+              <div class="mb-3">
+                <label for="d-phone" class="form-label">Numéro de téléphone</label>
+                <div class="input-group">
+                  <span class="input-group-text">+351</span>
+                  <input id="d-phone" type="tel" class="form-control" placeholder="9XXXXXX" required="">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="d-city" class="form-label">Ville</label>
+                <select id="d-city" class="form-select" required="">
+                  <option value="">Sélectionnez votre ville</option>
+                  <option>Lisbonne</option>
+                  <option>Porto</option>
+                  <option>Braga</option>
+                  <option>Coimbra</option>
+                  <option>Faro</option>
+                </select>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="d-terms" required="">
+                <label class="form-check-label" for="d-terms">
+                  J'accepte les <a href="term.html" target="_blank">Conditions d'utilisation</a> et <a href="privacy.html" target="_blank">Politique de confidentialité</a>.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">S'inscrire et commencer à conduire</button>
+              <p class="small text-muted mt-2 mb-0">Gérer plusieurs conducteurs ? <a href="fleet.html">Adhérer en tant que partenaire de la flotte</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why drive with DeliGo ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Pourquoi conduire avec DeliGo ?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 border rounded-3 h-100">
+          <i class="fa-solid fa-clock fa-2x mb-3"></i>
+          <h3 class="h5">Horaire flexible</h3>
+          <p>Conduisez quand vous le souhaitez - à temps plein, à temps partiel ou seulement quelques heures par semaine. Vous êtes toujours maître de votre temps.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded-3 h-100">
+          <i class="fa-solid fa-wallet fa-2x mb-3"></i>
+          <h3 class="h5">Paiements hebdomadaires</h3>
+          <p>Soyez payé chaque semaine avec des revenus transparents et sans frais cachés. Suivez vos voyages et vos paiements en temps réel.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded-3 h-100">
+          <i class="fa-solid fa-shield-heart fa-2x mb-3"></i>
+          <h3 class="h5">Sécurité et soutien</h3>
+          <p>Les SOS dans l'application, l'assistance en direct et le partage d'itinéraire vous permettent, ainsi qu'à vos passagers, de rester en sécurité lors de chaque trajet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Get Started ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Comment démarrer</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded-3 h-100">
+          <span class="badge bg-primary mb-3">Étape 1</span>
+          <h3 class="h5">Postuler en ligne</h3>
+          <p>Remplissez le formulaire d'inscription ci-dessus. Nous vous contacterons par e-mail ou par l'application pour vous communiquer la liste des documents requis.</p>
+          <ul class="small">
+            <li>Permis de conduire valide (Portugal/UE)</li>
+            <li>Carte d'identité ou de séjour</li>
+            <li>Documents du véhicule (si vous possédez une voiture)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded-3 h-100">
+          <span class="badge bg-primary mb-3">Étape 2</span>
+          <h3 class="h5">Téléchargez vos documents</h3>
+          <p>Téléchargez vos documents via l'application DeliGo Driver App. Une fois vérifié, votre profil sera activé.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded-3 h-100">
+          <span class="badge bg-primary mb-3">Étape 3</span>
+          <h3 class="h5">Pas de voiture ? Pas de problème</h3>
+          <p>Rejoignez un partenaire de flotte ou louez un véhicule sur notre place de marché. Nous vous mettrons en relation avec les options disponibles dans votre ville.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How the app works ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Fonctionnement de l'application DeliGo Driver App</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <ol class="list-group list-group-numbered">
+  <li class="list-group-item">Recevez des demandes de transport à proximité - acceptez celles que vous voulez.</li>
+  <li class="list-group-item">Suivez la navigation dans l'application pour aller chercher votre passager.</li>
+  <li class="list-group-item">Conduire jusqu'à la destination et terminer le voyage une fois celui-ci terminé.</li>
+  <li class="list-group-item">Gagnez plus pendant les heures de pointe ou dans les zones à forte demande.</li>
+  <li class="list-group-item">Suivez vos gains quotidiens et l'historique de vos déplacements directement depuis le tableau de bord de l'application.</li>
+  <li class="list-group-item">Obtenez des mises à jour instantanées de l'itinéraire et des alertes de sécurité pendant chaque trajet.</li>
+  <li class="list-group-item">Évaluez les passagers et faites-vous évaluer pour établir votre profil de conducteur professionnel.</li>
+  <li class="list-group-item">Recevoir des primes de performance hebdomadaires et des incitations pour un service de premier ordre.</li>
+</ol>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+          <img src="/images/driver-app-mock.png" alt="DeliGo App conducteur" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQs ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="h1 fw-bold mb-4">Questions fréquemment posées</h2>
+    <div class="accordion" id="driverFaq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">
+            Puis-je conduire à temps partiel ?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" aria-labelledby="q1" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Oui, vous pouvez aller en ligne et accepter des voyages quand vous le souhaitez. Il n'est pas nécessaire d'avoir des horaires fixes.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-controls="a2">
+            Comment suis-je payé ?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Vos gains hebdomadaires sont transférés directement sur votre compte bancaire. Vous pouvez suivre tous vos gains en temps réel dans l'application DeliGo.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-controls="a3">
+            Et si je ne possède pas de voiture ?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Vous pouvez rejoindre l'un de nos partenaires de flotte ou louer un véhicule sur notre place de marché - nous vous mettrons en contact avec les options disponibles.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-controls="a4">
+            Quels sont les documents requis ?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Vous aurez besoin d'un permis de conduire valide, d'une carte d'identité ou d'une carte de séjour, de la carte grise ou de l'assurance du véhicule (le cas échéant) et d'un numéro d'identification fiscale. Certaines villes peuvent exiger des documents supplémentaires.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-controls="a5">
+            Comment obtenir de l'aide ?
+          </button>
+        </h2>
+        <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#driverFaq">
+          <div class="accordion-body">
+            Vous pouvez nous contacter par chat in-app, par e-mail ou par l'intermédiaire de notre centre d'aide. En cas d'urgence, utilisez le bouton SOS de l'application.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h2 class="h1 fw-bold">Soyez votre propre patron. Commencez à conduire avec DeliGo dès aujourd'hui.</h2>
+        <p class="lead mb-0">Remplissez le formulaire ci-dessus - cela ne prend que 2 minutes. Une fois votre candidature approuvée, vous pourrez commencer à accepter des courses immédiatement.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <a href="#top" class="btn btn-primary btn-lg me-2">Postuler</a>
+        <a href="support.html" class="btn btn-outline-secondary btn-lg">Soutien aux conducteurs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Page Drivers Start -->
+    <div class="page-drivers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-1.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>john Smith</h3>
+                            <p>chauffeur senior</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-2.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>taylor smith</h3>
+                            <p>guide touristique de la ville</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-3.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>jordan brown</h3>
+                            <p>conducteur de distance</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-4.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>davis casey</h3>
+                            <p>spécialiste des voyages</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.8s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-5.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>morgan lee</h3>
+                            <p>conseiller en voyages</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="1s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-6.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>carlos mendes</h3>
+                            <p>transfert de l'aéroport</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="1.2s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-7.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>riley walker</h3>
+                            <p>chauffeur de direction</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="1.4s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="/images/team-8.jpg" alt="">
+                            </figure>
+                
+                            <!-- Team Social Icon Start -->
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social Icon End -->
+                        </div>
+                        <!-- Team Image End -->
+                
+                        <!-- Team Content Start -->
+                        <div class="team-content">
+                            <h3>hall d'avery</h3>
+                            <p>chauffeur de navette</p>
+                        </div>
+                        <!-- Team Content End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Drivers End -->
+
+    
+	<!-- Footer -->
+  <footer class="main-footer bg-section" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about-footer">
+            <div class="footer-logo"><img src="/images/footer-logo.svg" alt="DeliGo" loading="lazy"></div>
+            <div class="about-footer-content">
+              <p class="footer-text">
+                Des repas délicieux aux déplacements en douceur, DeliGo rend la vie quotidienne plus facile, plus rapide et plus pratique. Découvrez des accessoires tels que des ordinateurs portables et des téléphones, et découvrez des opportunités de carrière passionnantes chez nous.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-quick-links">
+            <h3>Politique juridique</h3>
+            <ul>
+              <li><a href="term.html">Conditions générales d'utilisation</a></li>
+              <li><a href="privacy.html">Politique de confidentialité</a></li>
+              <li><a href="notice.html">Avis juridique</a></li>
+              <li><a href="accessibility.html">Accessibilité</a></li>
+              <li><a href="complaintsbook.html">Registre des plaintes</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-menu">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="about.html">A propos de</a></li>
+              <li><a href="cab.html">Cabine</a></li>
+              <li><a href="rider.html">Cavalier</a></li>
+              <li><a href="food.html">Alimentation</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-newsletter">
+            <h3>S'abonner à la lettre d'information</h3>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST" aria-label="Inscription au bulletin d'information">
+                <div class="form-group">
+                  <label for="mail" class="visually-hidden">Courriel</label>
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Courriel ..." required="">
+                  <button type="submit" class="section-icon-btn" aria-label="Soumettre">
+                    <img src="/images/arrow-white.svg" alt="">
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-copyright-text">
+			<p>© <span id="year"></span> DeliGo Technologies Inc. Tous droits réservés.</p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-5">
+            <div class="footer-social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/@DeliGoPT" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/deligoeu" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/deligo.pt" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/deligopt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.tiktok.com/@deligo.pt" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<!-- ✅ Mobile submenu toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () { const mql = window.matchMedia('(max-width : 991.98px)') ; function bindSubmenuToggles(){ document.querySelectorAll('.main-header .submenu > a').forEach(function(a){ a.addEventListener('click', function(e){ if(mql.matches){ e.preventDefault() ; const li = this.parentElement ; li.classList.toggle('open') ; } }) ; }) ; } bindSubmenuToggles() ; }) ;
+</script>
+
+
+
+
+  
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/validator.min.js"></script>
+  <script src="/js/jquery.slicknav.js"></script>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.counterup.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/SmoothScroll.js"></script>
+  <script src="/js/parallaxie.js"></script>
+  <script src="/js/gsap.min.js"></script>
+  <script src="/js/magiccursor.js"></script>
+  <script src="/js/SplitText.js"></script>
+  <script src="/js/ScrollTrigger.min.js"></script>
+  <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="/js/wow.js"></script>
+  <script src="/js/function.js"></script>
+  <script src="/js/language-config.js"></script>
+  <script src="/js/language.js"></script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear() ;
+</script>
+
+<script>
+(function(){ const html = document.documentElement ; function isDark(){ return html.getAttribute('data-theme') === 'dark' ; } function setTheme(next){ if(next === 'dark'){ html.setAttribute('data-theme', 'dark') ; } else { html.removeAttribute('data-theme') ; } try{ localStorage.setItem('deligo-theme', next) ; }catch(e){} // sync button UIs const desktop = document.getElementById('themeToggleDesktop') ; const mobile = document.getElementById('themeToggleMobile') ; const desktopHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>' : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>' ; const mobileHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>' ; if (desktop) desktop.innerHTML = desktopHtml ; if (mobile) mobile.innerHTML = mobileHtml ; } function toggle(){ setTheme( isDark() ? 'light' : 'dark' ) ; } // appliquer le thème sauvegardé au chargement let saved = 'light' ; try{ saved = localStorage.getItem('deligo-theme') || 'light' ; }catch(e){} setTheme(saved) ; // lier les deux boutons ['themeToggleDesktop', 'themeToggleMobile'].forEach(id=>{ const el = document.getElementById(id) ; if(el) el.addEventListener('click', toggle) ; }) ; }) ;
+</script>
+
+
+</body></html>
