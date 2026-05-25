@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DeliGo — rides, food delivery, groceries & express courier. Ride, eat, live better with one super app." />
+  <meta name="keywords" content="DeliGo, ride, taxi, food delivery, grocery, courier, Portugal" />
+  <meta name="author" content="DeliGo" />
+
+  <!-- Social -->
+  <meta property="og:title" content="DeliGo — Ride, Eat, Live Better" />
+  <meta property="og:description" content="Book safe rides, order food & groceries, or send parcels — all in one app." />
+  <meta property="og:image" content="images/og-cover.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.deligoeu.com/" />
+
+  <!-- Page Title -->
+  <title>DeliGo — Food</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/slicknav.min.css" rel="stylesheet" />
+  <link href="/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="/css/all.css" rel="stylesheet" />
+  <link href="/css/animate.css" rel="stylesheet" />
+  <link href="/css/magnific-popup.css" rel="stylesheet" />
+  <link href="/css/mousecursor.css" rel="stylesheet" />
+  <link href="/css/custom.css" rel="stylesheet" />
+
+<script src="/js/boot.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"DeliGo",
+    "url":"https://www.deligoeu.com/",
+    "logo":"https://www.deligoeu.com/images/logo.png",
+    "sameAs":[
+      "https://www.facebook.com/deligoeu",
+      "https://www.instagram.com/deligo.pt",
+      "https://www.youtube.com/@DeliGoPT",
+      "https://www.linkedin.com/in/deligopt",
+      "https://www.tiktok.com/@deligo.pt"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="/images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+
+
+<!-- ===== Header (Bootstrap Toggler) ===== -->
+<header class="main-header" role="banner">
+  <div class="header-sticky">
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
+      <div class="container align-items-center">
+        <!-- Logo -->
+         <a class="navbar-brand" href="index.html" aria-label="DeliGo Home">
+  <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
+</a>
+
+        <!-- Mobile theme toggle (visible < lg) -->
+        <button id="themeToggleMobile" class="btn-icon d-inline-flex d-lg-none ms-auto me-2" type="button" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <!-- Hamburger (only one!) -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse main-menu order-lg-1" id="mainNavbar">
+          <div class="nav-menu-wrapper w-100">
+            <ul class="navbar-nav me-auto" id="menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="about.html">About</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About DeliGo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog / News</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="products.html">Products</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Rides</a></li>
+                  <li class="nav-item"><a class="nav-link" href="drive.html">Drive</a></li>
+                  <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="market.html">Market</a></li>
+                  <li class="nav-item"><a class="nav-link" href="accessories.html">Electronic Accessories</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="plus.html">Plus (Membership)</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="support.html">Support</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="stcustomers.html">Customers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="striders.html">Riders</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stdrivers.html">Drivers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfood.html">Food</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stcouriers.html">Couriers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stfleets.html">Fleet Owners</a></li>
+                  <li class="nav-item"><a class="nav-link" href="strestaurants.html">Restaurants & Stores</a></li>
+                  <li class="nav-item"><a class="nav-link" href="stbusiness.html">Business</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item submenu">
+                <a class="nav-link" href="join.html">Join</a>
+                <ul>
+                  <li class="nav-item"><a class="nav-link" href="jnrider.html">Become a Rider</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jndriver.html">Become a Driver</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jncourier.html">Become a Courier</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnfleet.html">Join as a Fleet Owner</a></li>
+                  <li class="nav-item"><a class="nav-link" href="jnrestaurant.html">Add a Restaurant</a></li>
+                  <li class="nav-item"><a class="nav-link" href="franchise.html">Become a franchise</a></li>
+                  <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                </ul>
+              </li>
+
+              <!-- Language -->
+              <li class="nav-item language-switcher">
+                <a class="nav-link" href="#" id="current-language" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img id="lang-flag" src="/images/flags/gb.svg" alt="English" width="24" height="16" />
+                  <span id="lang-label">EN</span>
+                </a>
+                <div class="lang-dropdown" id="lang-dropdown" hidden>
+                  <div class="lang-search-wrap">
+                    <input type="search" class="lang-search" id="lang-search" placeholder="Search languages…" aria-label="Search languages" autocomplete="off" />
+                  </div>
+                  <div class="lang-list" id="lang-list"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.collapse -->
+
+        <!-- Desktop theme toggle (nice pink button) -->
+        <div class="d-none d-lg-flex align-items-center gap-2 ms-auto order-lg-2">
+          <button id="themeToggleDesktop" class="btn-default btn-sm" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+            <i class="fa-regular fa-moon"></i>
+            <span class="ms-1 d-none d-md-inline">Dark</span>
+          </button>
+        </div>
+      </div><!-- /.container -->
+    </nav>
+  </div>
+</header>
+<!-- ===== /Header ===== -->
+
+	<!-- Page Header End -->
+
+<!-- Deligo Food – Merchant Landing -->
+<section class="food-hero bg-section">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <div class="hero-visual rounded-4 overflow-hidden shadow-sm wow fadeInUp">
+          <img src="/images/food/hero.png" alt="Deligo Food partners at work" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 wow fadeInUp" data-wow-delay=".1s">
+          <h1 class="mb-2">Partner with DeliGo Food and <span class="text-highlight">boost your orders</span></h1>
+          <p class="mb-4">Join our network to reach new customers, streamline deliveries, and grow faster—online and in-store.</p>
+
+          <!-- Signup form (static mock) -->
+          <form class="row gy-3" aria-label="Merchant application form">
+            <div class="col-12">
+              <label class="form-label">Business Type</label>
+              <select class="form-select">
+                <option selected>Restaurant</option>
+                <option>Bakery & Dessert</option>
+                <option>Café</option>
+                <option>Grocery / Mini-mart</option>
+                <option>Other retail</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Business Name</label>
+              <input class="form-control" placeholder="e.g., Cafe Aurora">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Store Address</label>
+              <input class="form-control" placeholder="Street, city">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Contact Email</label>
+              <input type="email" class="form-control" placeholder="name@business.com">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Phone</label>
+              <div class="input-group">
+                <span class="input-group-text">+351</span>
+                <input class="form-control" placeholder="9xx xxx xxx">
+              </div>
+            </div>
+            <div class="col-12 d-grid">
+              <button class="btn-default btn-highlighted" type="button">Get started</button>
+            </div>
+            <small class="text-muted mt-2">By continuing, you agree to DeliGo’s Terms & Privacy.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Value bullets -->
+<section class="py-80">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="mb-3">Do more with DeliGo Food</h2>
+        <p class="mb-4">From visibility to delivery logistics—DeliGo lets you focus on great food while we bring the orders.</p>
+        <ul class="list-unstyled d-grid gap-3">
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-chart-line"></i></span>
+            <div><strong>More revenue</strong><br><span class="text-muted">Tap into thousands of nearby customers.</span></div>
+          </li>
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-box"></i></span>
+            <div><strong>Delivery done right</strong><br><span class="text-muted">Fast, tracked deliveries with verified couriers.</span></div>
+          </li>
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-gauge-high"></i></span>
+            <div><strong>Real-time insights</strong><br><span class="text-muted">Dashboard for sales, hours, menus & promos.</span></div>
+          </li>
+          <li class="d-flex gap-3 align-items-start">
+            <span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-arrows-repeat"></i></span>
+            <div><strong>Flexible setup</strong><br><span class="text-muted">POS integrations and easy menu management.</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="rounded-4 overflow-hidden shadow-sm wow fadeInUp">
+          <img src="/images/food/kitchen.jpg" alt="Kitchen preparing orders" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Smart insights -->
+<section class="py-80 bg-section">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="rounded-4 overflow-hidden shadow-sm">
+          <img src="/images/food/dashboard.png" alt="Merchant analytics dashboard" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-3">Data that powers smarter decisions</h2>
+        <p class="mb-4">Track what matters and act quickly—from peak hours and conversion to promo performance.</p>
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <strong>Unique users</strong>
+              <p class="mb-0 text-muted">How many customers see & order from your store each day.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <strong>Average order value</strong>
+              <p class="mb-0 text-muted">Raise AOV with bundles, upsells and timed offers.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <strong>Service level</strong>
+              <p class="mb-0 text-muted">Prep speed, acceptance rate and ETA accuracy in one place.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <strong>Conversion</strong>
+              <p class="mb-0 text-muted">See how menu photos, price and reviews impact orders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories we support -->
+<section class="py-80">
+  <div class="container">
+    <h2 class="mb-4">We partner with more than restaurants</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-6"><div class="card border-0 shadow-sm p-3 h-100"><strong>Restaurants</strong><p class="text-muted mb-0">Casual, fine dining & fast food.</p></div></div>
+      <div class="col-md-3 col-6"><div class="card border-0 shadow-sm p-3 h-100"><strong>Grocery stores</strong><p class="text-muted mb-0">Express groceries & essentials.</p></div></div>
+      <div class="col-md-3 col-6"><div class="card border-0 shadow-sm p-3 h-100"><strong>Bakery & dessert</strong><p class="text-muted mb-0">Cakes, pastries, ice-cream.</p></div></div>
+      <div class="col-md-3 col-6"><div class="card border-0 shadow-sm p-3 h-100"><strong>Other retail</strong><p class="text-muted mb-0">Florists, pet stores & more.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Getting started steps -->
+<section class="py-80 bg-section">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="rounded-4 overflow-hidden shadow-sm">
+          <img src="/images/food/owners.jpg" alt="Owners onboarding with DeliGo" class="w-100">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-3">Getting started is easy</h2>
+        <ol class="list-unstyled d-grid gap-3">
+          <li class="d-flex gap-3"><span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-file-signature"></i></span><div><strong>Sign the agreement</strong><br><span class="text-muted">Simple, transparent partner terms.</span></div></li>
+          <li class="d-flex gap-3"><span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-camera"></i></span><div><strong>Share menu & photos</strong><br><span class="text-muted">High-quality images sell more.</span></div></li>
+          <li class="d-flex gap-3"><span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-badge-check"></i></span><div><strong>Verify your info</strong><br><span class="text-muted">KYC and store details, done online.</span></div></li>
+          <li class="d-flex gap-3"><span class="section-icon-btn flex-shrink-0"><i class="fa-regular fa-bell-on"></i></span><div><strong>Go live & receive orders</strong><br><span class="text-muted">Accept, prepare, we deliver.</span></div></li>
+        </ol>
+        <a href="#top" class="btn-default btn-highlighted mt-2">Become a partner</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits band -->
+<section class="py-80">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="row g-3 align-items-center">
+            <div class="col-sm-5"><img src="/images/food/benefits1.jpg" class="w-100 rounded-3" alt="More orders"></div>
+            <div class="col-sm-7">
+              <h3 class="mb-2">Unlock more orders</h3>
+              <p class="text-muted mb-3">Partners see steady growth with targeted promos and prime placement.</p>
+              <a href="#" class="btn-link">See case studies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm p-4 h-100">
+          <div class="row g-3 align-items-center">
+            <div class="col-sm-5"><img src="/images/food/benefits2.jpg" class="w-100 rounded-3" alt="Happier customers"></div>
+            <div class="col-sm-7">
+              <h3 class="mb-2">Happier customers</h3>
+              <p class="text-muted mb-3">Reliable ETAs, live tracking and in-app support keep diners coming back.</p>
+              <a href="#" class="btn-link">Learn how it works</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-80 bg-section">
+  <div class="container">
+    <h2 class="mb-4">Frequently asked questions</h2>
+    <div class="accordion" id="foodFaq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fc1">What is DeliGo Food?</button>
+        </h2>
+        <div id="fc1" class="accordion-collapse collapse show" data-bs-parent="#foodFaq">
+          <div class="accordion-body">DeliGo Food connects restaurants & retailers with local customers via delivery and pickup—plus tools for menus, pricing and insights.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fc2">How do I become a partner?</button>
+        </h2>
+        <div id="fc2" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+          <div class="accordion-body">Fill the form above, our team will verify details, set up your menu and help you go live—usually within a few days.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fc3">Do you support non-restaurant stores?</button>
+        </h2>
+        <div id="fc3" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+          <div class="accordion-body">Yes—groceries, bakeries, florists and select retail are welcome. Choose the correct business type when applying.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fc4">What fees should I expect?</button>
+        </h2>
+        <div id="fc4" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+          <div class="accordion-body">Competitive commissions, optional marketing packages, and transparent weekly payouts. Exact rates vary by category and city.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<!-- Page Header End -->
+	
+	
+	<!-- Footer -->
+  <footer class="main-footer bg-section" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="about-footer">
+            <div class="footer-logo"><img src="/images/footer-logo.svg" alt="DeliGo" loading="lazy" /></div>
+            <div class="about-footer-content">
+              <p class="footer-text">
+                From delicious meals to smooth rides, DeliGo makes everyday living easier, faster, and more convenient.
+                Explore accessories like laptops and phones, and discover exciting career opportunities with us.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-quick-links">
+            <h3>Legal policy</h3>
+            <ul>
+              <li><a href="term.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="notice.html">Legal Notice</a></li>
+              <li><a href="accessibility.html">Accessibility</a></li>
+              <li><a href="complaintsbook.html">Complaints Book</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links footer-menu">
+            <h3>Quick links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="cab.html">Cab</a></li>
+              <li><a href="rider.html">Rider</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-newsletter">
+            <h3>Subscribe to the Newsletter</h3>
+            <div class="footer-newsletter-form">
+              <form id="newslettersForm" action="#" method="POST" aria-label="Newsletter sign up">
+                <div class="form-group">
+                  <label for="mail" class="visually-hidden">Email</label>
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Email ..." required />
+                  <button type="submit" class="section-icon-btn" aria-label="Submit">
+                    <img src="/images/arrow-white.svg" alt="" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-copyright-text">
+			<p>© <span id="year"></span> DeliGo Technologies Inc. All rights reserved.</p>
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-5">
+            <div class="footer-social-links">
+              <ul>
+                <li><a href="https://www.youtube.com/@DeliGoPT" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/deligoeu" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/deligo.pt" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/deligopt" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.tiktok.com/@deligo.pt" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<!-- ✅ Mobile submenu toggle script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mql = window.matchMedia('(max-width: 991.98px)');
+    function bindSubmenuToggles(){
+      document.querySelectorAll('.main-header .submenu > a').forEach(function(a){
+        a.addEventListener('click', function(e){
+          if(mql.matches){
+            e.preventDefault();
+            const li = this.parentElement;
+            li.classList.toggle('open');
+          }
+        });
+      });
+    }
+    bindSubmenuToggles();
+  });
+</script>
+
+</body>
+</html>
+
+  
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/jquery-ui.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/validator.min.js"></script>
+  <script src="/js/jquery.slicknav.js"></script>
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.counterup.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/SmoothScroll.js"></script>
+  <script src="/js/parallaxie.js"></script>
+  <script src="/js/gsap.min.js"></script>
+  <script src="/js/magiccursor.js"></script>
+  <script src="/js/SplitText.js"></script>
+  <script src="/js/ScrollTrigger.min.js"></script>
+  <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="/js/wow.js"></script>
+  <script src="/js/function.js"></script>
+  <script src="/js/language-config.js"></script>
+  <script src="/js/language.js"></script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="/js/theme.js"></script>
+
+</body>
+</html>

@@ -42,8 +42,8 @@
   </script>
 
   <link rel="alternate" hreflang="x-default" href="/business.html">
-  <link rel="alternate" hreflang="en" href="/business.html">
-  <link rel="alternate" hreflang="pt" href="/pt/business.html">
+  <link rel="alternate" hreflang="en" href="/en/business.html">
+  <link rel="alternate" hreflang="pt" href="/business.html">
   <link rel="alternate" hreflang="es" href="/es/business.html">
   <link rel="alternate" hreflang="fr" href="/fr/business.html">
   <link rel="alternate" hreflang="de" href="/de/business.html">
@@ -441,9 +441,7 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<script>
-(function(){ const html = document.documentElement; function isDark(){ return html.getAttribute('data-theme') === 'dark'; } function setTheme(next){ if(next === 'dark'){ html.setAttribute('data-theme','dark'); } else { html.removeAttribute('data-theme'); } try{ localStorage.setItem('deligo-theme', next); }catch(e){} // synkronisera knapparnas UI const desktop = document.getElementById('themeToggleDesktop'); const mobile = document.getElementById('themeToggleMobile'); const desktopHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>' : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>'; const mobileHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>'; if (desktop) desktop.innerHTML = desktopHtml; if (mobile) mobile.innerHTML = mobileHtml; } function toggle(){ setTheme( isDark() ? 'light' : 'dark' ); } // tillämpa sparat tema vid laddning let saved = 'light'; try{ saved = localStorage.getItem('deligo-theme') || 'light'; }catch(e){} setTheme(saved); // binda båda knapparna ['themeToggleDesktop','themeToggleMobile'].forEach(id=>{ const el = document.getElementById(id); if(el) el.addEventListener('click', toggle); }); })();
-</script>
+<script src="/js/theme.js"></script>
 
 
 

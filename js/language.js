@@ -17,7 +17,7 @@
   var BY_CODE = {};
   LANGS.forEach(function (l) { BY_CODE[l.code] = l; });
 
-  var DEFAULT_LANG = 'en';
+  var DEFAULT_LANG = 'pt';
   var STORAGE_KEY = 'siteLang';
   var BANNER_DISMISS_KEY = 'siteLangBannerDismissed';
 
@@ -50,19 +50,19 @@
   // ── URL helpers ──────────────────────────────────────────────────────────
   function detectLangFromUrl() {
     var segs = window.location.pathname.split('/').filter(Boolean);
-    if (segs.length && BY_CODE[segs[0]] && segs[0] !== 'en') return segs[0];
-    return 'en';
+    if (segs.length && BY_CODE[segs[0]] && segs[0] !== DEFAULT_LANG) return segs[0];
+    return DEFAULT_LANG;
   }
 
   function stripLangPrefix(pathname) {
     var segs = pathname.split('/').filter(Boolean);
-    if (segs.length && BY_CODE[segs[0]] && segs[0] !== 'en') segs.shift();
+    if (segs.length && BY_CODE[segs[0]] && segs[0] !== DEFAULT_LANG) segs.shift();
     return '/' + segs.join('/');
   }
 
   function buildLangUrl(targetCode) {
     var base = stripLangPrefix(window.location.pathname);
-    if (targetCode === 'en') return base + window.location.search + window.location.hash;
+    if (targetCode === DEFAULT_LANG) return base + window.location.search + window.location.hash;
     if (base === '/' || base === '') base = '/index.html';
     return '/' + targetCode + base + window.location.search + window.location.hash;
   }
@@ -273,7 +273,7 @@
       if (e.key === 'Escape' && isModalOpen()) closeModal();
     });
 
-    if (currentCode === 'en') {
+    if (currentCode === DEFAULT_LANG) {
       setTimeout(function () { maybeShowSuggestionBanner(currentCode); }, 800);
     }
   }

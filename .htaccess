@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Legacy /pt/* URLs → root (Portuguese is now the default language at root)
+RewriteRule ^pt/(.*)$ /$1 [R=301,L]
+RewriteRule ^pt/?$ / [R=301,L]

@@ -42,8 +42,8 @@
   </script>
 
   <link rel="alternate" hreflang="x-default" href="/stcouriers.html">
-  <link rel="alternate" hreflang="en" href="/stcouriers.html">
-  <link rel="alternate" hreflang="pt" href="/pt/stcouriers.html">
+  <link rel="alternate" hreflang="en" href="/en/stcouriers.html">
+  <link rel="alternate" hreflang="pt" href="/stcouriers.html">
   <link rel="alternate" hreflang="es" href="/es/stcouriers.html">
   <link rel="alternate" hreflang="fr" href="/fr/stcouriers.html">
   <link rel="alternate" hreflang="de" href="/de/stcouriers.html">
@@ -484,9 +484,7 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<script>
-(function(){ const html = document.documentElement; function isDark(){ return html.getAttribute('data-theme') === 'dark'; } function setTheme(next){ if(next === 'dark'){ html.setAttribute('data-theme','dark'); } else { html.removeAttribute('data-theme'); } try{ localStorage.setItem('deligo-theme', next); }catch(e){} // synkroniser knappens brukergrensesnitt const desktop = document.getElementById('themeToggleDesktop'); const mobile = document.getElementById('themeToggleMobile'); const desktopHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>' : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>'; const mobileHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>'; if (desktop) desktop.innerHTML = desktopHtml; if (mobile) mobile.innerHTML = mobileHtml; } function toggle(){ setTheme( isDark() ? 'light' : 'dark' ); } // apply saved theme on load let saved = 'light'; try{ saved = localStorage.getItem('deligo-theme') || 'light'; }catch(e){} setTheme(saved); // bind begge knappene ['themeToggleDesktop','themeToggleMobile'].forEach(id=>{ const el = document.getElementById(id); if(el) el.addEventListener('click', toggle); }); }); })();
-</script>
+<script src="/js/theme.js"></script>
 
 
 
