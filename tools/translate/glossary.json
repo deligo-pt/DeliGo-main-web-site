@@ -2,24 +2,24 @@
   "description": "Terms and patterns the translator must NOT translate. Strings matched by 'literal' are protected by exact (case-sensitive) match; 'patterns' are JavaScript regular expressions applied to text nodes before sending to the translation API. Extend this file as new brand terms surface during QA.",
 
   "literal": [
-    "DeliGo",
-    "DeliGo Ride",
-    "DeliGo Food",
-    "DeliGo Market",
-    "DeliGo Grocery",
-    "DeliGo Plus",
+    "DeliGo Technologies Inc.",
+    "DeliGo Accessories",
     "DeliGo Business",
     "DeliGo Express",
-    "DeliGo Accessories",
-    "DeliGo Technologies Inc.",
+    "DeliGo Grocery",
+    "DeliGo Market",
+    "DeliGo Food",
+    "DeliGo Ride",
+    "DeliGo Plus",
+    "DeliGo",
     "PIXELMIRACLE, LDA",
     "PIXELMIRACLE",
     "geral@deligo.pt",
     "contact@deligo.pt",
-    "deligo.pt",
-    "deligoeu.com",
     "www.deligo.pt",
-    "www.deligoeu.com"
+    "www.deligoeu.com",
+    "deligo.pt",
+    "deligoeu.com"
   ],
 
   "patterns": [

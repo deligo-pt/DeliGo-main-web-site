@@ -18,6 +18,7 @@ import { maskGlossary, hasRealText } from './glossary.js';
 import { parsePage } from './extractor.js';
 import { rewriteAssetPaths, applyLanguageMetadata, setSwitcherDefaults } from './rewriter.js';
 import { getProvider } from './providers/index.js';
+import { getNormalizer } from './normalizers/index.js';
 
 // Skip pure punctuation / pure numeric / single-letter junk.
 function isTranslatable(text) {
@@ -71,6 +72,7 @@ async function translateForLang(lang, provider, opts) {
   if (!langCfg) throw new Error(`Unknown language code: ${lang}`);
 
   const cache = await loadCache(lang);
+  const normalize = getNormalizer(lang);
   const outDir = path.join(PROJECT_ROOT, lang);
   await fs.mkdir(outDir, { recursive: true });
 
@@ -136,15 +138,17 @@ async function translateForLang(lang, provider, opts) {
       }
     }
 
-    // Write results back into the DOM.
+    // Write results back into the DOM, applying the per-language normalizer
+    // as the last step so cache stays untouched but the rendered HTML always
+    // reflects the latest orthographic / brand-context overrides.
     for (const entry of prepared) {
       if (entry.skip) continue;
       if (entry.brandOnly) {
-        entry.job.setText(entry.restore(entry.masked));
+        entry.job.setText(normalize(entry.restore(entry.masked)));
         continue;
       }
       const finalMasked = entry.translated ?? cacheGet(cache, entry.masked) ?? entry.masked;
-      entry.job.setText(entry.restore(finalMasked));
+      entry.job.setText(normalize(entry.restore(finalMasked)));
     }
 
     rewriteAssetPaths($);
