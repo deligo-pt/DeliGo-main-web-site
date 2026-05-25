@@ -21,6 +21,28 @@
   var STORAGE_KEY = 'siteLang';
   var BANNER_DISMISS_KEY = 'siteLangBannerDismissed';
 
+  // UI strings the picker itself needs in the current language. Falls back
+  // to English when a language is missing. Use {native} as the placeholder
+  // for the preferred language name inside the suggestion banner.
+  var I18N = {
+    en: { title: 'Choose your language', search: 'Search languages…',  empty: 'No match',         suggest: 'View this site in {native}?',           accept: 'Switch',   dismiss: 'Dismiss', close: 'Close' },
+    pt: { title: 'Escolha o seu idioma', search: 'Pesquisar idiomas…', empty: 'Sem resultados',   suggest: 'Ver este site em {native}?',            accept: 'Mudar',    dismiss: 'Dispensar', close: 'Fechar' },
+    es: { title: 'Elige tu idioma',      search: 'Buscar idiomas…',    empty: 'Sin coincidencias',suggest: '¿Ver este sitio en {native}?',          accept: 'Cambiar',  dismiss: 'Descartar', close: 'Cerrar' },
+    fr: { title: 'Choisissez votre langue', search: 'Rechercher des langues…', empty: 'Aucun résultat', suggest: 'Voir ce site en {native} ?',     accept: 'Changer',  dismiss: 'Ignorer', close: 'Fermer' },
+    de: { title: 'Sprache auswählen',    search: 'Sprachen suchen…',   empty: 'Keine Treffer',    suggest: 'Diese Seite auf {native} anzeigen?',    accept: 'Wechseln', dismiss: 'Schließen', close: 'Schließen' },
+    nl: { title: 'Kies je taal',         search: 'Talen zoeken…',      empty: 'Geen resultaten',  suggest: 'Deze site in {native} bekijken?',       accept: 'Wisselen', dismiss: 'Sluiten', close: 'Sluiten' },
+    it: { title: 'Scegli la tua lingua', search: 'Cerca lingue…',      empty: 'Nessun risultato', suggest: 'Visualizza questo sito in {native}?',   accept: 'Cambia',   dismiss: 'Chiudi', close: 'Chiudi' },
+    sv: { title: 'Välj språk',           search: 'Sök språk…',         empty: 'Inga träffar',     suggest: 'Visa denna webbplats på {native}?',     accept: 'Byt',      dismiss: 'Stäng', close: 'Stäng' },
+    da: { title: 'Vælg dit sprog',       search: 'Søg sprog…',         empty: 'Ingen match',      suggest: 'Vis dette websted på {native}?',        accept: 'Skift',    dismiss: 'Luk', close: 'Luk' },
+    fi: { title: 'Valitse kielesi',      search: 'Etsi kieliä…',       empty: 'Ei osumia',        suggest: 'Näytä tämä sivusto kielellä {native}?', accept: 'Vaihda',   dismiss: 'Sulje', close: 'Sulje' },
+    no: { title: 'Velg språk',           search: 'Søk språk…',         empty: 'Ingen treff',      suggest: 'Vis dette nettstedet på {native}?',     accept: 'Bytt',     dismiss: 'Lukk', close: 'Lukk' }
+  };
+
+  function t(code, key) {
+    var bundle = I18N[code] || I18N[DEFAULT_LANG];
+    return (bundle && bundle[key]) || I18N[DEFAULT_LANG][key];
+  }
+
   // ── Storage helpers ──────────────────────────────────────────────────────
   function safeGet(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
   function safeSet(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
@@ -90,15 +112,15 @@
     modalEl.innerHTML =
       '<div class="lang-modal" role="dialog" aria-modal="true" aria-labelledby="lang-modal-title">'
     +   '<div class="lang-modal-header">'
-    +     '<h2 id="lang-modal-title" class="lang-modal-title">Choose your language</h2>'
-    +     '<button type="button" class="lang-modal-close" aria-label="Close">'
+    +     '<h2 id="lang-modal-title" class="lang-modal-title">' + escapeHtml(t(currentCode, 'title')) + '</h2>'
+    +     '<button type="button" class="lang-modal-close" aria-label="' + escapeHtml(t(currentCode, 'close')) + '">'
     +       '<svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" aria-hidden="true">'
     +         '<path d="M6 6 L18 18 M18 6 L6 18"/>'
     +       '</svg>'
     +     '</button>'
     +   '</div>'
     +   '<div class="lang-modal-search-wrap">'
-    +     '<input type="search" class="lang-modal-search" placeholder="Search languages…" aria-label="Search languages" autocomplete="off" />'
+    +     '<input type="search" class="lang-modal-search" placeholder="' + escapeHtml(t(currentCode, 'search')) + '" aria-label="' + escapeHtml(t(currentCode, 'search')) + '" autocomplete="off" />'
     +   '</div>'
     +   '<div class="lang-modal-list"></div>'
     + '</div>';
@@ -156,7 +178,7 @@
       });
     }
     if (!filtered.length) {
-      modalListEl.innerHTML = '<div class="lang-modal-empty">No match</div>';
+      modalListEl.innerHTML = '<div class="lang-modal-empty">' + escapeHtml(t(currentCode, 'empty')) + '</div>';
       return;
     }
     var html = '';
@@ -214,11 +236,12 @@
     banner.className = 'lang-suggest';
     banner.setAttribute('role', 'region');
     banner.setAttribute('aria-label', 'Language suggestion');
+    var suggestText = t(curr, 'suggest').replace('{native}', '<strong>' + escapeHtml(preferred.native) + '</strong>');
     banner.innerHTML =
         '<img class="lang-suggest-flag" src="' + flagSrc(preferred.flag) + '" alt="" width="24" height="16" />'
-      + '<span class="lang-suggest-text">View this site in <strong>' + escapeHtml(preferred.native) + '</strong>?</span>'
-      + '<button type="button" class="lang-suggest-accept">Switch</button>'
-      + '<button type="button" class="lang-suggest-dismiss" aria-label="Dismiss">×</button>';
+      + '<span class="lang-suggest-text">' + suggestText + '</span>'
+      + '<button type="button" class="lang-suggest-accept">' + escapeHtml(t(curr, 'accept')) + '</button>'
+      + '<button type="button" class="lang-suggest-dismiss" aria-label="' + escapeHtml(t(curr, 'dismiss')) + '">×</button>';
     document.body.appendChild(banner);
 
     banner.querySelector('.lang-suggest-accept').addEventListener('click', function () {
