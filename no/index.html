@@ -42,8 +42,8 @@
   </script>
 
   <link rel="alternate" hreflang="x-default" href="/index.html">
-  <link rel="alternate" hreflang="en" href="/index.html">
-  <link rel="alternate" hreflang="pt" href="/pt/index.html">
+  <link rel="alternate" hreflang="en" href="/en/index.html">
+  <link rel="alternate" hreflang="pt" href="/index.html">
   <link rel="alternate" hreflang="es" href="/es/index.html">
   <link rel="alternate" hreflang="fr" href="/fr/index.html">
   <link rel="alternate" hreflang="de" href="/de/index.html">
@@ -187,7 +187,6 @@
 				Velkommen til DeliGo§ <br>Sykle, spise, leve bedre
                    <span class="text-highlight">Med DeliGo§</span>
                 </h1>
-				<p class="wow fadeInUp" data-wow-delay="0.25s">Ri ut eller bli inne - valget er ditt.</p>
               </div>
 			  
 			  <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
@@ -823,9 +822,7 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-<script>
-(function(){ const html = document.documentElement; function isDark(){ return html.getAttribute('data-theme') === 'dark'; } function setTheme(next){ if(next === 'dark'){ html.setAttribute('data-theme','dark'); } else { html.removeAttribute('data-theme'); } try{ localStorage.setItem('deligo-theme', next); }catch(e){} // synkroniser knappens brukergrensesnitt const desktop = document.getElementById('themeToggleDesktop'); const mobile = document.getElementById('themeToggleMobile'); const desktopHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i><span class="ms-1 d-none d-md-inline">Light</span>' : '<i class="fa-regular fa-moon"></i><span class="ms-1 d-none d-md-inline">Dark</span>'; const mobileHtml = next === 'dark' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-regular fa-moon"></i>'; if (desktop) desktop.innerHTML = desktopHtml; if (mobile) mobile.innerHTML = mobileHtml; } function toggle(){ setTheme( isDark() ? 'light' : 'dark' ); } // apply saved theme on load let saved = 'light'; try{ saved = localStorage.getItem('deligo-theme') || 'light'; }catch(e){} setTheme(saved); // bind begge knappene ['themeToggleDesktop','themeToggleMobile'].forEach(id=>{ const el = document.getElementById(id); if(el) el.addEventListener('click', toggle); }); }); })();
-</script>
+<script src="/js/theme.js"></script>
 
 
 </sect></body></html>
