@@ -38,7 +38,7 @@
 <script src="/js/boot.js"></script>
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {"@contesto":"https://schema.org", "@tipo": "Organizzazione", "nome":"DeliGo", "url":"https://www.deligoeu.com/", "logo":"https://www.deligoeu.com/images/logo.png", "sameAs":[ "https://www.facebook.com/deligo.pt", "https://www.instagram.com/deligo.pt", "https://www.youtube.com/@DeliGoPT", "§§G6§", "https://www.tiktok.com/@deligo.pt" ] } }
+  {"@contesto":"https://schema.org", "@tipo": "Organizzazione", "nome":"DeliGo", "url":"https://www.deligoeu.com/", "logo":"https://www.deligoeu.com/images/logo.png", "sameAs":[ "https://www.facebook.com/deligo.pt", "https://www.instagram.com/deligo.pt", "https://www.youtube.com/@DeliGoPT", "https://www.linkedin.com/in/deligopt", "https://www.tiktok.com/@deligo.pt" ] } }
   </script>
 
   <link rel="alternate" hreflang="x-default" href="/index.html">
@@ -104,14 +104,12 @@
               </li>
 
               <li class="nav-item submenu">
-                <a class="nav-link" href="products.html">Prodotti</a>
+                <a class="nav-link" href="products.html">Categoria</a>
                 <ul>
-                  <li class="nav-item"><a class="nav-link" href="rides.html">Giostre</a></li>
-                  <li class="nav-item"><a class="nav-link" href="drive.html">Guida</a></li>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Viaggi Condivisi</a></li>
                   <li class="nav-item"><a class="nav-link" href="food.html">Cibo</a></li>
-                  <li class="nav-item"><a class="nav-link" href="market.html">Il mercato</a></li>
                   <li class="nav-item"><a class="nav-link" href="accessories.html">Accessori elettronici</a></li>
-                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Aziende</a></li>
                   <li class="nav-item"><a class="nav-link" href="plus.html">Plus (abbonamento)</a></li>
                 </ul>
               </li>
@@ -197,7 +195,7 @@
 </a>
 
 <script>
-function openQR(e, img) { e.preventDefault(); const width = 400; const height = 400; const left = (screen.width / 2) - (width / 2); const top = (screen.height / 2) - (height / 2); window.open( img, "QR", `width=§G0§§,height=${height},top=§G2§§,left=§G3§§,resizable=no` ); }
+function openQR(e, img) { e.preventDefault(); const width = 400; const height = 400; const left = (screen.width / 2) - (width / 2); const top = (screen.height / 2) - (height / 2); window.open( img, "QR", `width=${width},height=${height},top=${top},left=${left},resizable=no` ); }
 </script>
 
 
@@ -233,7 +231,7 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
-          <h2 class="mb-3">Perché scegliere DeliGo Market?</h2>
+          <h2 class="mb-3">Perché scegliere DeliGo Mercato?</h2>
           <p class="mb-4">Il vostro supermercato locale, ora in tasca. Fate la spesa in modo più intelligente, risparmiate tempo e godetevi la comodità della porta di casa.</p>
           <ul class="list-unstyled d-grid gap-3">
   <li class="d-flex gap-3 align-items-start">
@@ -257,18 +255,18 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
         </div>
         <div class="col-lg-6">
           <div class="rounded-4 overflow-hidden shadow-sm wow fadeInUp">
-            <img src="/images/food/owners.jpg" alt="DeliGo Market consegna della spesa" class="w-100">
+            <img src="/images/food/owners.jpg" alt="DeliGo Mercato consegna della spesa" class="w-100">
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Quick Access DeliGo Food -->
+  <!-- Quick Access DeliGo Cibo -->
 <section class="dg-suggest">
   <div class="container">
     <div class="dg-suggest-head">
-      <h2>Accesso rapido 🍔 DeliGo Food§</h2>
+      <h2>Accesso rapido 🍔 DeliGo Cibo</h2>
     </div>
 
     <div class="dg-suggest-grid">
@@ -281,11 +279,11 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
           <a class="dg-suggest-btn" href="https://play.google.com/store/apps/details?id=com.deligo.customer">Dettagli</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/4.png" alt="DeliGo Food App del cliente" loading="lazy">
+          <img src="/images/app/4.png" alt="DeliGo Cibo App del cliente" loading="lazy">
         </div>
       </article>
 
-      <!-- Rider App -->
+      <!-- Fattorino App -->
       <article class="dg-suggest-card">
         <div class="dg-suggest-content">
           <h3>App Rider</h3>
@@ -293,11 +291,11 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
           <a class="dg-suggest-btn" href=" https://play.google.com/store/apps/details?id=com.deligorider">Dettagli</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/5.png" alt="DeliGo Food Rider App" loading="lazy">
+          <img src="/images/app/5.png" alt="DeliGo Cibo Fattorino App" loading="lazy">
         </div>
       </article>
 
-      <!-- Rider Fleet Manager -->
+      <!-- Fattorino Flotta Manager -->
       <article class="dg-suggest-card">
         <div class="dg-suggest-content">
           <h3>Responsabile flotta Rider</h3>
@@ -305,7 +303,7 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
           <a class="dg-suggest-btn" href="fleet.html">Dettagli</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/3.png" alt="DeliGo Rider Responsabile della flotta" loading="lazy">
+          <img src="/images/app/3.png" alt="DeliGo Fattorino Responsabile della flotta" loading="lazy">
         </div>
       </article>
 
@@ -328,7 +326,7 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
 <!-- ===== Partner Vendor ===== -->
 <section class="py-80 bg-section text-center">
   <div class="container">
-    <h2>Hai un negozio? Cresci con DeliGo Market!</h2>
+    <h2>Hai un negozio? Cresci con DeliGo Mercato!</h2>
     <p class="mb-4">
       Entrate a far parte del mercato online di generi alimentari e di prima necessità in rapida crescita in Portogallo e raggiungete nuovi clienti ogni giorno.
     </p>
@@ -338,11 +336,11 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
   </div>
 </section>
 
-	<!-- Quick Access DeliGo Ride -->
+	<!-- Quick Access DeliGo Viaggio -->
 <section class="dg-suggest">
   <div class="container">
     <div class="dg-suggest-head">
-      <h2>Accesso rapido 🚕 DeliGo Ride§</h2>
+      <h2>Accesso rapido 🚕 DeliGo Viaggio</h2>
     </div>
 
     <div class="dg-suggest-grid">
@@ -355,11 +353,11 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
           <a class="dg-suggest-btn" href="ride.html">Dettagli</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/1.png" alt="DeliGo Ride App del cliente" loading="lazy">
+          <img src="/images/app/1.png" alt="DeliGo Viaggio App del cliente" loading="lazy">
         </div>
       </article>
 
-      <!-- Cab Driver App -->
+      <!-- Cab Autista App -->
       <article class="dg-suggest-card">
         <div class="dg-suggest-content">
           <h3>App per tassisti</h3>
@@ -390,7 +388,7 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
 <!-- ===== Partner Fleet ===== -->
 <section class="py-80 bg-section text-center">
   <div class="container">
-    <h2>Collaborate con DeliGo Fleet!</h2>
+    <h2>Collaborate con DeliGo Flotta!</h2>
     <p class="mb-4">
       Unisciti alla nostra rete di consegne in crescita e guadagna gestendo autisti e veicoli. Ottieni ordini costanti e tracciamento in tempo reale.
     </p>
@@ -561,10 +559,10 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
       <div class="accordion" id="marketFaq">
         <div class="accordion-item">
           <h2 class="accordion-header" id="mq1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mc1">Che cos'è DeliGo Market?</button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mc1">Che cos'è DeliGo Mercato?</button>
           </h2>
           <div id="mc1" class="accordion-collapse collapse show" data-bs-parent="#marketFaq">
-            <div class="accordion-body">DeliGo Market è la vostra piattaforma di alimentari online dove potete ordinare cibo, prodotti di prima necessità e articoli per la casa dai negozi più vicini e farveli consegnare rapidamente.</div>
+            <div class="accordion-body">DeliGo Mercato è la vostra piattaforma di alimentari online dove potete ordinare cibo, prodotti di prima necessità e articoli per la casa dai negozi più vicini e farveli consegnare rapidamente.</div>
           </div>
         </div>
 
@@ -630,7 +628,7 @@ function openQR(e, img) { e.preventDefault(); const width = 400; const height = 
         <div class="col-lg-4 col-md-12">
           <div class="why-choose-image">
             <figure class="reveal">
-              <img src="/images/new/choosing-section.jpeg" alt="DeliGo Ride auto" loading="lazy">
+              <img src="/images/new/choosing-section.jpeg" alt="DeliGo Viaggio auto" loading="lazy">
             </figure>
           </div>
         </div>

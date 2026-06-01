@@ -72,7 +72,7 @@
     <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primaire navigatie">
       <div class="container align-items-center">
         <!-- Logo -->
- <a class="navbar-brand" href="index.html" aria-label="DeliGo Home">
+ <a class="navbar-brand" href="index.html" aria-label="DeliGo Thuis">
   <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="50">
 </a>
 
@@ -104,14 +104,12 @@
               </li>
 
               <li class="nav-item submenu">
-                <a class="nav-link" href="products.html">Producten</a>
+                <a class="nav-link" href="products.html">Categorie</a>
                 <ul>
-                  <li class="nav-item"><a class="nav-link" href="rides.html">Ritten</a></li>
-                  <li class="nav-item"><a class="nav-link" href="drive.html">Aandrijving</a></li>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Deelritten</a></li>
                   <li class="nav-item"><a class="nav-link" href="food.html">Voedsel</a></li>
-                  <li class="nav-item"><a class="nav-link" href="market.html">Markt</a></li>
                   <li class="nav-item"><a class="nav-link" href="accessories.html">Elektronische accessoires</a></li>
-                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Zakelijk</a></li>
                   <li class="nav-item"><a class="nav-link" href="plus.html">Plus (Lidmaatschap)</a></li>
                 </ul>
               </li>
@@ -197,7 +195,7 @@
 </a>
 
 <script>
-functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 400; const left = (screen.width / 2) - (width / 2); const top = (screen.height / 2) - (height / 2); window.open( img, "QR", `width=§G0§§,height=§G1§§,top=§G2§§,left=§G3§,resizable=no` ); }
+function openQR(e, img) { e.preventDefault(); const width = 400; const height = 400; const left = (screen.width / 2) - (width / 2); const top = (screen.height / 2) - (height / 2); window.open( img, "QR", `width=${width},height=${height},top=${top},left=${left},resizable=no` ); }
 </script>
 
 
@@ -221,7 +219,7 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
       <div class="col-lg-6 text-center">
         <div class="rounded-4 overflow-hidden shadow-sm wow zoomIn" data-wow-duration="1.2s" data-wow-delay="0.3s">
           
-          <img src="/images/DeliGoLda.png" alt="§§G0§ Logo" class="img-fluid mx-auto d-block floating-logo">
+          <img src="/images/DeliGoLda.png" alt="G0 Logo" class="img-fluid mx-auto d-block floating-logo">
     
         </div>
       </div>
@@ -233,7 +231,7 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
-          <h2 class="mb-3">Waarom kiezen voor DeliGo Market?</h2>
+          <h2 class="mb-3">Waarom kiezen voor DeliGo Markt?</h2>
           <p class="mb-4">Je plaatselijke supermarkt, nu in je broekzak. Winkel slimmer, bespaar tijd en geniet van het gemak aan huis.</p>
           <ul class="list-unstyled d-grid gap-3">
   <li class="d-flex gap-3 align-items-start">
@@ -257,18 +255,18 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
         </div>
         <div class="col-lg-6">
           <div class="rounded-4 overflow-hidden shadow-sm wow fadeInUp">
-            <img src="/images/food/owners.jpg" alt="DeliGo Market Boodschappen worden bezorgd" class="w-100">
+            <img src="/images/food/owners.jpg" alt="DeliGo Markt Boodschappen worden bezorgd" class="w-100">
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Quick Access DeliGo Food -->
+  <!-- Quick Access DeliGo Eten -->
 <section class="dg-suggest">
   <div class="container">
     <div class="dg-suggest-head">
-      <h2>Snelle toegang 🍔 DeliGo Food</h2>
+      <h2>Snelle toegang 🍔 DeliGo Eten</h2>
     </div>
 
     <div class="dg-suggest-grid">
@@ -281,11 +279,11 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
           <a class="dg-suggest-btn" href="https://play.google.com/store/apps/details?id=com.deligo.customer">Details</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/4.png" alt="DeliGo Food Klant App" loading="lazy">
+          <img src="/images/app/4.png" alt="DeliGo Eten Klant App" loading="lazy">
         </div>
       </article>
 
-      <!-- Rider App -->
+      <!-- Bezorger App -->
       <article class="dg-suggest-card">
         <div class="dg-suggest-content">
           <h3>Rider app</h3>
@@ -293,11 +291,11 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
           <a class="dg-suggest-btn" href=" https://play.google.com/store/apps/details?id=com.deligorider">Details</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/5.png" alt="§§G0§ Ruiter App" loading="lazy">
+          <img src="/images/app/5.png" alt="G0 Ruiter App" loading="lazy">
         </div>
       </article>
 
-      <!-- Rider Fleet Manager -->
+      <!-- Bezorger Vloot Manager -->
       <article class="dg-suggest-card">
         <div class="dg-suggest-content">
           <h3>Wagenparkbeheerder</h3>
@@ -305,7 +303,7 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
           <a class="dg-suggest-btn" href="fleet.html">Details</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/3.png" alt="DeliGo Rider Vlootmanager" loading="lazy">
+          <img src="/images/app/3.png" alt="DeliGo Bezorger Vlootmanager" loading="lazy">
         </div>
       </article>
 
@@ -328,7 +326,7 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
 <!-- ===== Partner Vendor ===== -->
 <section class="py-80 bg-section text-center">
   <div class="container">
-    <h2>Heeft u een winkel? Groei met DeliGo Market!</h2>
+    <h2>Heeft u een winkel? Groei met DeliGo Markt!</h2>
     <p class="mb-4">
       Sluit je aan bij de snelgroeiende online marktplaats voor levensmiddelen en benodigdheden in Portugal en bereik elke dag nieuwe klanten.
     </p>
@@ -338,11 +336,11 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
   </div>
 </section>
 
-	<!-- Quick Access DeliGo Ride -->
+	<!-- Quick Access DeliGo Rit -->
 <section class="dg-suggest">
   <div class="container">
     <div class="dg-suggest-head">
-      <h2>Snelle toegang 🚕 DeliGo Ride</h2>
+      <h2>Snelle toegang 🚕 DeliGo Rit</h2>
     </div>
 
     <div class="dg-suggest-grid">
@@ -355,11 +353,11 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
           <a class="dg-suggest-btn" href="ride.html">Details</a>
         </div>
         <div class="dg-suggest-media">
-          <img src="/images/app/1.png" alt="DeliGo Ride Klant App" loading="lazy">
+          <img src="/images/app/1.png" alt="DeliGo Rit Klant App" loading="lazy">
         </div>
       </article>
 
-      <!-- Cab Driver App -->
+      <!-- Cab Chauffeur App -->
       <article class="dg-suggest-card">
         <div class="dg-suggest-content">
           <h3>App voor taxichauffeur</h3>
@@ -390,7 +388,7 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
 <!-- ===== Partner Fleet ===== -->
 <section class="py-80 bg-section text-center">
   <div class="container">
-    <h2>Partner met DeliGo Fleet!</h2>
+    <h2>Partner met DeliGo Vloot!</h2>
     <p class="mb-4">
       Sluit je aan bij ons groeiende bezorgnetwerk en verdien door chauffeurs en voertuigen te managen. Ontvang vaste orders en realtime tracking.
     </p>
@@ -561,10 +559,10 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
       <div class="accordion" id="marketFaq">
         <div class="accordion-item">
           <h2 class="accordion-header" id="mq1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mc1">Wat is DeliGo Market?</button>
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mc1">Wat is DeliGo Markt?</button>
           </h2>
           <div id="mc1" class="accordion-collapse collapse show" data-bs-parent="#marketFaq">
-            <div class="accordion-body">DeliGo Market is uw online boodschappenplatform waar u levensmiddelen, basisbenodigdheden en huishoudelijke artikelen uit winkels in de buurt kunt bestellen en snel geleverd kunt krijgen.</div>
+            <div class="accordion-body">DeliGo Markt is uw online boodschappenplatform waar u levensmiddelen, basisbenodigdheden en huishoudelijke artikelen uit winkels in de buurt kunt bestellen en snel geleverd kunt krijgen.</div>
           </div>
         </div>
 
@@ -630,7 +628,7 @@ functie openQR(e, img) { e.preventDefault(); const width = 400; const height = 4
         <div class="col-lg-4 col-md-12">
           <div class="why-choose-image">
             <figure class="reveal">
-              <img src="/images/new/choosing-section.jpeg" alt="DeliGo Ride auto" loading="lazy">
+              <img src="/images/new/choosing-section.jpeg" alt="DeliGo Rit auto" loading="lazy">
             </figure>
           </div>
         </div>
