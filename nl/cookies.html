@@ -72,7 +72,7 @@
     <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primaire navigatie">
       <div class="container align-items-center">
         <!-- Logo -->
- <a class="navbar-brand" href="index.html" aria-label="DeliGo Home">
+ <a class="navbar-brand" href="index.html" aria-label="DeliGo Thuis">
   <img src="/images/logo.png" alt="DeliGo" class="brand-logo no-theme-filter" height="36">
 </a>
 
@@ -104,14 +104,12 @@
               </li>
 
               <li class="nav-item submenu">
-                <a class="nav-link" href="products.html">Producten</a>
+                <a class="nav-link" href="products.html">Categorie</a>
                 <ul>
-                  <li class="nav-item"><a class="nav-link" href="rides.html">Ritten</a></li>
-                  <li class="nav-item"><a class="nav-link" href="drive.html">Aandrijving</a></li>
+                  <li class="nav-item"><a class="nav-link" href="rides.html">Deelritten</a></li>
                   <li class="nav-item"><a class="nav-link" href="food.html">Voedsel</a></li>
-                  <li class="nav-item"><a class="nav-link" href="market.html">Markt</a></li>
                   <li class="nav-item"><a class="nav-link" href="accessories.html">Elektronische accessoires</a></li>
-                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Business</a></li>
+                  <li class="nav-item"><a class="nav-link" href="business.html">DeliGo Zakelijk</a></li>
                   <li class="nav-item"><a class="nav-link" href="plus.html">Plus (Lidmaatschap)</a></li>
                 </ul>
               </li>
@@ -336,7 +334,7 @@
 
 <!-- ===== Tiny helper script (uses Bootstrap modal + localStorage) ===== -->
 <script>
-  (functie () { const key = 'cookie_prefs_v1'; const openBtn = document.getElementById('openCookiePrefs'); const form = document.getElementById('cookiePrefsForm'); functie getPrefs() { try { return JSON.parse(localStorage.getItem(key)) || {}; } catch(e){ return {}; } } functie setPrefs(p) { try { localStorage.setItem(key, JSON.stringify(p)); } catch(e){} document.cookie = "cookie_prefs=" + encodeURIComponent(JSON.stringify(p)) + ";path=/;max-age=" + (3600*24*365) + ";SameSite=Lax"; } functie applyToForm(p) { if (!form) return; form.consentAnalytics.checked = !!p.analytics; form.consentFunctional.checked = !!p.functional; form.consentMarketing.checked = !!p.marketing; } document.addEventListener('DOMContentLoaded', function(){ const saved = getPrefs(); applyToForm(saved); if (openBtn) { openBtn.addEventListener('click', function(e){ e.preventDefault(); const modal = new bootstrap.Modal(document.getElementById('cookiePrefsModal')); modal.show(); }); } if (form) { form.addEventListener('submit', function(e){ e.preventDefault(); const prefs = { essential: true, analytics: form.consentAnalytics.checked, functional: form.consentFunctional.checked, marketing: form.consentMarketing.checked }; setPrefs(prefs); bootstrap.Modal.getInstance(document.getElementById('cookiePrefsModal'))?.hide(); }); }); });
+  (function () { const key = 'cookie_prefs_v1'; const openBtn = document.getElementById('openCookiePrefs'); const form = document.getElementById('cookiePrefsForm'); function getPrefs() { try { return JSON.parse(localStorage.getItem(key)) || {}; } catch(e){ return {}; } } function setPrefs(p) { try { localStorage.setItem(key, JSON.stringify(p)); } catch(e){} document.cookie = "cookie_prefs=" + encodeURIComponent(JSON.stringify(p)) + ";path=/;max-age=" + (3600*24*365) + ";SameSite=Lax"; } function applyToForm(p) { if (!form) return; form.consentAnalytics.checked = !!p.analytics; form.consentFunctional.checked = !!p.functional; form.consentMarketing.checked = !!p.marketing; } document.addEventListener('DOMContentLoaded', function(){ const saved = getPrefs(); applyToForm(saved); if (openBtn) { openBtn.addEventListener('click', function(e){ e.preventDefault(); const modal = new bootstrap.Modal(document.getElementById('cookiePrefsModal')); modal.show(); }); } if (form) { form.addEventListener('submit', function(e){ e.preventDefault(); const prefs = { essential: true, analytics: form.consentAnalytics.checked, functional: form.consentFunctional.checked, marketing: form.consentMarketing.checked }; setPrefs(prefs); bootstrap.Modal.getInstance(document.getElementById('cookiePrefsModal'))?.hide(); }); }); });
 </script>
 
 	
